@@ -7,7 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "feed:snapshot": "node -e \"require('fs').copyFileSync('out/product-feed.xml','merchant-feed.xml')\" && echo merchant-feed.xml refreshed from the last build"
   },
   "dependencies": {
     "clsx": "^2.1.1",

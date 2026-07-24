@@ -32,6 +32,14 @@ export interface Product {
   readonly featured: boolean
 }
 
+/**
+ * Google product taxonomy id used for every item in the Merchant Center feed.
+ * Numeric ids are preferred over the full category string because the string
+ * form has to match Google's taxonomy exactly, character for character, and
+ * silently drops the item when it does not.
+ */
+export const GOOGLE_PRODUCT_CATEGORY = '3002'
+
 const IMAGE = '/products/nad-plus-500mg.webp'
 const IMAGE_ALT =
   'Zyrex Bio NAD+ 500mg research vial with a teal flip top seal and black label'

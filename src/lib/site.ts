@@ -42,7 +42,7 @@ export const site = {
   googleSiteVerification: 'ZFSF7P94tIXo8j8uFX6j_343SWZoyRAiI3rIoajPKg4',
 
   contact: {
-    email: 'support@zyrexbioau.com',
+    email: 'info@zyrexbioau.com',
     /** Sole trader with no staffed phone line, so email is the only channel. */
     phone: null as string | null,
     hours: 'Monday to Friday, 9:00am to 5:00pm AEST',

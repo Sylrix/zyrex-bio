@@ -1,4 +1,4 @@
-import { products } from '@/lib/products'
+import { GOOGLE_PRODUCT_CATEGORY, products } from '@/lib/products'
 import { absoluteUrl } from '@/lib/seo'
 import { RUO_NOTICE, site } from '@/lib/site'
 import { priceValue } from '@/lib/utils'
@@ -42,6 +42,7 @@ export function GET() {
       <g:brand>${escapeXml(site.name)}</g:brand>
       <g:mpn>${escapeXml(product.sku)}</g:mpn>
       <g:identifier_exists>no</g:identifier_exists>
+      <g:google_product_category>${GOOGLE_PRODUCT_CATEGORY}</g:google_product_category>
       <g:product_type>Laboratory Supplies &gt; Research Chemicals &gt; NAD+</g:product_type>
       <g:adult>no</g:adult>
       <g:shipping>
