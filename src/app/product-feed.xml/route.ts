@@ -8,9 +8,21 @@ import { priceValue } from '@/lib/utils'
  *
  * `force-static` is what lets a GET route handler survive `output: 'export'`, * the XML is written out at build time and served as a plain file.
  *
- * The research-use notice is inside every description on purpose. A shopping
+ * The research use notice is inside every description on purpose. A shopping
  * feed for research chemicals that omits it is the fastest route to a policy
  * suspension.
+ *
+ * Two things here are deliberate and easy to "tidy" back into bugs:
+ *
+ *  - title, link and description are plain RSS 2.0 core elements, not g:
+ *    namespaced. Google documents both spellings inconsistently, and the core
+ *    elements are the ones an RSS parser is guaranteed to read. Using the
+ *    unambiguous form removes a whole class of "missing required attribute".
+ *
+ *  - There is no identifier_exists. It means "this product has no GTIN and no
+ *    brand plus MPN", which would contradict the brand and mpn sent below.
+ *    These vials have no GTIN, but brand plus MPN is a valid identifier pair,
+ *    so the attribute is simply omitted and defaults to yes.
  */
 export const dynamic = 'force-static'
 
@@ -32,16 +44,15 @@ export function GET() {
 
       return `    <item>
       <g:id>${escapeXml(product.sku)}</g:id>
-      <g:title>${escapeXml(product.name)}</g:title>
-      <g:description>${escapeXml(description)}</g:description>
-      <g:link>${escapeXml(url)}</g:link>
+      <title>${escapeXml(product.name)}</title>
+      <link>${escapeXml(url)}</link>
+      <description>${escapeXml(description)}</description>
       <g:image_link>${escapeXml(image)}</g:image_link>
       <g:availability>${product.stock === 'in_stock' ? 'in_stock' : 'out_of_stock'}</g:availability>
       <g:price>${priceValue(product.price)} ${site.currency}</g:price>
       <g:condition>new</g:condition>
       <g:brand>${escapeXml(site.name)}</g:brand>
       <g:mpn>${escapeXml(product.sku)}</g:mpn>
-      <g:identifier_exists>no</g:identifier_exists>
       <g:google_product_category>${GOOGLE_PRODUCT_CATEGORY}</g:google_product_category>
       <g:product_type>Laboratory Supplies &gt; Research Chemicals &gt; NAD+</g:product_type>
       <g:adult>no</g:adult>
