@@ -43,12 +43,21 @@ push to `main`. In the repo, set **Settings → Pages → Source** to *GitHub
 Actions*, and add `WEB3FORMS_KEY` under **Settings → Secrets and variables →
 Actions**.
 
-**Custom domain (current setup).** `public/CNAME` holds `www.zyrexbioau.com`
-and `NEXT_PUBLIC_BASE_PATH` stays empty, so the site lives at the domain root.
+**Live now at https://sylrix.github.io/zyrex-bio/** — the workflow sets
+`NEXT_PUBLIC_BASE_PATH=/zyrex-bio` and `NEXT_PUBLIC_SITE_URL` to match, so
+assets resolve under the subpath and canonicals point at the real URL.
 
-**Project pages instead** (`sylrix.github.io/zyrex-bio`): delete `public/CNAME`
-and set `NEXT_PUBLIC_BASE_PATH: '/zyrex-bio'` in the workflow. Every link,
-asset and image picks the prefix up automatically.
+**Switching to www.zyrexbioau.com** once DNS points at GitHub Pages — three
+changes, all in this repo:
+
+1. In `.github/workflows/deploy.yml`, set `NEXT_PUBLIC_BASE_PATH: ''` and
+   `NEXT_PUBLIC_SITE_URL: 'https://www.zyrexbioau.com'`
+2. Add `public/CNAME` containing `www.zyrexbioau.com`
+3. Point the domain's DNS at GitHub Pages (a `CNAME` record for `www` →
+   `sylrix.github.io`), then set the custom domain under **Settings → Pages**
+
+Those two env vars must always agree with where the site is served. If they
+disagree, either every asset 404s or every canonical points at a dead URL.
 
 ## How the checkout works
 

@@ -20,7 +20,17 @@ export const site = {
   tagline: 'NAD+ research compounds, supplied for laboratory use only.',
   description:
     'Zyrex Bio supplies NAD+ research compounds at 99% purity for laboratory and research use only. Independently run and dispatched from Melbourne, Australia. Not for human or veterinary use.',
-  url: 'https://www.zyrexbioau.com',
+  /**
+   * Where the site actually answers. Canonicals, JSON-LD @ids, the sitemap and
+   * the product feed are all built from this, so it has to match reality — a
+   * canonical pointing at a domain that does not resolve yet is worse than no
+   * canonical at all. Set NEXT_PUBLIC_SITE_URL at build time; the fallback is
+   * the eventual custom domain.
+   */
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.zyrexbioau.com').replace(
+    /\/$/,
+    ''
+  ),
   locale: 'en_AU',
   country: 'AU',
   currency: 'AUD',
