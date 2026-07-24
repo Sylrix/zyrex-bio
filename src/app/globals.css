@@ -1,0 +1,205 @@
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------------------
+   Zyrex Bio design tokens
+
+   Light, high-contrast, saturated. The palette is pulled straight off the vial
+   label: electric blue and cyan against near-black type, with a lime and a
+   lilac added so a page never reads as one hue. No dark theme anywhere.
+--------------------------------------------------------------------------- */
+
+@theme {
+  --font-display: var(--font-bricolage), 'Trebuchet MS', sans-serif;
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-space), ui-monospace, 'SF Mono', monospace;
+
+  --color-paper: #fbfbfe;
+  --color-paper-2: #f2f5ff;
+  --color-ink: #080d1f;
+  --color-slate: #4b5570;
+  --color-line: #dfe4f5;
+
+  --color-blue: #0b5cff;
+  --color-blue-deep: #0034b3;
+  --color-blue-soft: #e6eeff;
+  --color-cyan: #17c9ff;
+  --color-cyan-soft: #dff6ff;
+  --color-lime: #ccff45;
+  --color-lime-deep: #6a8a00;
+  --color-lilac: #b79bff;
+  --color-lilac-soft: #f0e9ff;
+  --color-coral: #ff6b8a;
+
+  --radius-blob: 2.5rem;
+
+  --shadow-pop: 0 6px 0 0 var(--color-ink);
+  --shadow-pop-sm: 0 4px 0 0 var(--color-ink);
+  --shadow-lift: 0 22px 60px -28px rgba(8, 13, 31, 0.45);
+
+  --animate-marquee: marquee 34s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-spin-slow: spin 22s linear infinite;
+  --animate-shimmer: shimmer 2.4s linear infinite;
+  --animate-pulse-ring: pulse-ring 2.8s ease-out infinite;
+  --animate-bob: bob 4.5s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.04);
+  }
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(-6px) rotate(-1.5deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(1.5deg);
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.7;
+  }
+  80%,
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------- */
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: 'ss01', 'cv11';
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-lime);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-blue);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Honour the OS setting. Everything decorative stops; nothing breaks. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Screen-reader-only, but focusable — used by the skip link. */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .grain {
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      rgba(8, 13, 31, 0.055) 1px,
+      transparent 0
+    );
+    background-size: 22px 22px;
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      100deg,
+      var(--color-blue) 0%,
+      var(--color-cyan) 42%,
+      var(--color-lilac) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .shimmer-text {
+    background: linear-gradient(
+      100deg,
+      var(--color-ink) 20%,
+      var(--color-blue) 42%,
+      var(--color-cyan) 52%,
+      var(--color-ink) 70%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: var(--animate-shimmer);
+  }
+}
