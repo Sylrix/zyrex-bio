@@ -65,7 +65,7 @@ export default function ResearchUsePage() {
         {
           heading: 'Handling and storage',
           body: [
-            'Store sealed vials at 2–8°C, protected from light, and keep them out of reach of children and anyone not involved in the research. Handle in a controlled setting with appropriate protective equipment, and dispose of unused material and packaging in line with the rules that apply to your facility and your local authority.',
+            'Store sealed vials at 2 to 8°C, protected from light, and keep them out of reach of children and anyone not involved in the research. Handle in a controlled setting with appropriate protective equipment, and dispose of unused material and packaging in line with the rules that apply to your facility and your local authority.',
           ],
         },
         {

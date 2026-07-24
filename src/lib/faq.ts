@@ -9,7 +9,7 @@ export interface FaqEntry {
 /**
  * One list, used by the home page, the FAQ page and the FAQPage JSON-LD.
  * Duplicating the copy would guarantee the structured data and the visible
- * answers eventually disagree, which is exactly what rich-result checks flag.
+ * answers eventually disagree, which is exactly what rich result checks flag.
  */
 export const faqs: readonly FaqEntry[] = [
   {
@@ -22,7 +22,7 @@ export const faqs: readonly FaqEntry[] = [
   },
   {
     q: 'Who runs Zyrex Bio?',
-    a: `Zyrex Bio is ${site.ownership}. It is not a company or an incorporated laboratory group — one person sources the material, packs the orders and answers the email.`,
+    a: `Zyrex Bio is ${site.ownership}. It is not a company or an incorporated laboratory group. One person sources the material, packs the orders and answers the email.`,
   },
   {
     q: 'How is my order shipped?',
@@ -30,19 +30,19 @@ export const faqs: readonly FaqEntry[] = [
   },
   {
     q: 'Do you ship outside Australia?',
-    a: 'Not at the moment. Orders are only accepted for delivery to Australian addresses so the research-use conditions attached to the material can be met.',
+    a: 'Not at the moment. Orders are only accepted for delivery to Australian addresses so the research use conditions attached to the material can be met.',
   },
   {
     q: 'How do I pay?',
-    a: 'Choose card, Australian bank transfer, PayID, Apple Pay or Google Pay at checkout. No card number, expiry or CVC is ever entered on this site — the order is recorded and an invoice with a secure payment link for your chosen method is emailed back.',
+    a: 'Choose card, Australian bank transfer, PayID, Apple Pay or Google Pay at checkout. Your order is recorded, then an invoice with a secure payment link for the method you picked is emailed back and payment is completed on the provider’s own page.',
   },
   {
-    q: 'Why does the site not take my card directly?',
-    a: 'Because the site is a static storefront with no payment server behind it. Sending you to a hosted payment page keeps card data with the payment provider, where it belongs, rather than passing through a form here.',
+    q: 'When is my order dispatched?',
+    a: `Once the invoice is settled. Vials are packed within ${site.shipping.dispatchWindow} of payment clearing and a tracking number is emailed the moment the parcel is lodged.`,
   },
   {
     q: 'How should the vials be stored?',
-    a: 'Keep them sealed at 2–8°C and out of direct light. They arrive in an insulated mailer, and the seal should stay intact until the material is used in the lab.',
+    a: 'Keep them sealed at 2 to 8°C and out of direct light. They arrive in an insulated mailer, and the seal should stay intact until the material is used in the lab.',
   },
   {
     q: 'Can I return an order?',

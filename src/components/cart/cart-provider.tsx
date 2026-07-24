@@ -36,7 +36,7 @@ const CartContext = createContext<CartContextValue | null>(null)
 export function CartProvider({ children }: { readonly children: ReactNode }) {
   const [drawerOpen, setDrawerOpen] = useState(false)
 
-  // The cart lives in localStorage, shared across tabs — an external store,
+  // The cart lives in localStorage, shared across tabs, an external store,
   // not React state that happens to be persisted.
   const serialised = useSyncExternalStore(
     subscribeToCart,

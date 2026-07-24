@@ -12,7 +12,7 @@ import { RUO_NOTICE, fullAddress, site } from '@/lib/site'
 export const metadata: Metadata = pageMetadata({
   title: 'About Zyrex Bio',
   description:
-    'Zyrex Bio is a one-person operation in Melbourne supplying NAD+ research compounds at 99% purity. No company, no call centre — one sole trader who packs every order.',
+    'Zyrex Bio is a one person operation in Bacchus Marsh, Victoria supplying NAD+ research compounds at 99% purity. Not a company. One sole trader who packs every order.',
   path: '/about',
   keywords: ['about Zyrex Bio', 'independent research compound supplier Australia'],
 })
@@ -21,12 +21,12 @@ const CREDS = [
   {
     icon: UserRound,
     title: 'A sole trader, not a company',
-    body: `Zyrex Bio is ${site.ownership}, registered under ABN ${site.abn}. There is no board, no team page and no "our labs" — there is one person, and that person is accountable for everything on this site.`,
+    body: `Zyrex Bio is ${site.ownership}. There is no board, no team page and no "our labs". There is one person, and that person is accountable for everything on this site.`,
   },
   {
     icon: Snowflake,
     title: 'Stock held properly',
-    body: 'Material arrives cold, goes straight into a monitored 2–8°C fridge out of direct light, and stays there until the moment an order is packed.',
+    body: 'Material arrives cold, goes straight into a monitored 2 to 8°C fridge out of direct light, and stays there until the moment an order is packed.',
   },
   {
     icon: PackageCheck,
@@ -56,7 +56,7 @@ export default function AboutPage() {
             properly.
           </>
         }
-        description={`Zyrex Bio supplies NAD+ research material from ${site.address.city}, ${site.address.state}. It is ${site.ownership} — not a company, not a laboratory group, and not a reseller network.`}
+        description={`Zyrex Bio supplies NAD+ research material from ${site.address.city}, ${site.address.state}. It is ${site.ownership}, not a company, not a laboratory group, and not a reseller network.`}
         crumbs={crumbs}
       />
 
@@ -179,10 +179,6 @@ export default function AboutPage() {
               <div className="flex flex-wrap justify-between gap-2">
                 <dt className="text-slate">Structure</dt>
                 <dd className="font-semibold">Sole trader (individual)</dd>
-              </div>
-              <div className="flex flex-wrap justify-between gap-2">
-                <dt className="text-slate">ABN</dt>
-                <dd className="font-mono font-semibold">{site.abn}</dd>
               </div>
               <div className="flex flex-wrap justify-between gap-2">
                 <dt className="text-slate">Address</dt>

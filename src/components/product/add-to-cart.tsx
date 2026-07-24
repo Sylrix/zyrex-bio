@@ -79,7 +79,7 @@ export function AddToCart({ product }: { readonly product: Product }) {
                 className="flex items-center gap-2"
               >
                 <ShoppingBag className="h-5 w-5" strokeWidth={2.6} />
-                Add {qty > 1 ? `${qty} ` : ''}— {formatPrice(product.price * qty)}
+                Add {qty > 1 ? `${qty} ` : ''},  {formatPrice(product.price * qty)}
               </motion.span>
             )}
           </AnimatePresence>

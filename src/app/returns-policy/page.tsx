@@ -23,7 +23,7 @@ export default function ReturnsPolicyPage() {
         {
           heading: 'The 30-day window',
           body: [
-            'Unopened vials with the aluminium flip-off seal intact can be returned within 30 days of delivery for a refund of the purchase price. Return postage is at your cost unless the return is because of an error or a fault.',
+            'Unopened vials with the aluminium flip off seal intact can be returned within 30 days of delivery for a refund of the purchase price. Return postage is at your cost unless the return is because of an error or a fault.',
             'Start a return by emailing the order reference and what you would like to send back. Return instructions come back the same or next business day.',
           ],
         },
@@ -31,13 +31,13 @@ export default function ReturnsPolicyPage() {
           heading: 'What cannot be returned',
           body: [
             'Once a seal is broken the material cannot be verified or resold, so opened vials are not returnable other than where Australian Consumer Law requires a remedy.',
-            'This is not a technicality — a research material whose chain of custody is unknown has no place going back into stock for someone else.',
+            'This is not a technicality, a research material whose chain of custody is unknown has no place going back into stock for someone else.',
           ],
         },
         {
           heading: 'Faults, damage and wrong items',
           body: [
-            `If an order arrives damaged, incomplete, or is not what was ordered, email ${site.contact.email} within 7 days of delivery with the reference and a photograph. A replacement or a full refund including postage is arranged straight away — you will not be asked to send a damaged parcel back at your own expense.`,
+            `If an order arrives damaged, incomplete, or is not what was ordered, email ${site.contact.email} within 7 days of delivery with the reference and a photograph. A replacement or a full refund including postage is arranged straight away, you will not be asked to send a damaged parcel back at your own expense.`,
           ],
         },
         {

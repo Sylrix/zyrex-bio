@@ -8,7 +8,7 @@ import { formatPrice } from '@/lib/utils'
 export const metadata: Metadata = pageMetadata({
   title: 'Terms of sale',
   description:
-    'The terms you agree to when you order from Zyrex Bio — ordering, pricing, payment, delivery, research-use conditions and liability.',
+    'The terms you agree to when you order from Zyrex Bio, ordering, pricing, payment, delivery, research use conditions and liability.',
   path: '/terms',
 })
 
@@ -24,21 +24,21 @@ export default function TermsPage() {
         {
           heading: 'Who you are dealing with',
           body: [
-            `${site.name} is ${site.ownership}, trading under ABN ${site.abn} from ${fullAddress}. It is not a company, corporation or incorporated laboratory group, and it has no subsidiaries, branches or agents.`,
+            `${site.name} is ${site.ownership}, trading from ${fullAddress}. It is not a company, corporation or incorporated laboratory group, and it has no subsidiaries, branches or agents.`,
             `Anywhere these terms say "we" or "us", that means the individual who operates ${site.name}. Contact is by email at ${site.contact.email}.`,
           ],
         },
         {
           heading: 'Placing an order',
           body: [
-            'Submitting the checkout form is an offer to buy, not a completed sale. A contract is formed only once the order is accepted and an invoice is issued. Orders may be declined for any lawful reason, including where the research-use conditions cannot be met.',
+            'Submitting the checkout form is an offer to buy, not a completed sale. A contract is formed only once the order is accepted and an invoice is issued. Orders may be declined for any lawful reason, including where the research use conditions cannot be met.',
             'You must be 18 or over to order, and the details you provide must be accurate and your own.',
           ],
         },
         {
           heading: 'Research use conditions',
           body: [
-            `${RUO_NOTICE} By ordering you accept the research-use policy in full and confirm the material will be used only for laboratory research.`,
+            `${RUO_NOTICE} By ordering you accept the research use policy in full and confirm the material will be used only for laboratory research.`,
             'Breaching that condition ends the agreement immediately and no refund is owed for material already supplied.',
           ],
         },
@@ -46,7 +46,7 @@ export default function TermsPage() {
           heading: 'Prices and payment',
           body: [
             `Prices are in ${site.currency} and include GST where it applies. Shipping is added at checkout and is free on orders over ${formatPrice(site.shipping.freeThreshold)}.`,
-            'No payment is taken on this site and no card details are collected here. Once an order is accepted, an invoice with a secure payment link for your chosen method is emailed to you. Goods are packed once payment has cleared.',
+            'Placing an order does not charge you. Once an order is accepted, an invoice with a secure payment link for your chosen method is emailed to you, and payment is completed on the payment provider’s own page. Goods are packed once payment has cleared.',
             'Prices may change at any time, but the price shown when your order was placed is the price that will be invoiced.',
           ],
         },
@@ -67,7 +67,7 @@ export default function TermsPage() {
           heading: 'Limitation of liability',
           body: [
             'To the extent permitted by law, and other than for the consumer guarantees that cannot be excluded, liability for any claim connected with an order is limited to replacing the goods or refunding what was paid for them.',
-            'No liability is accepted for loss arising from use of the material outside the research-use conditions, or for indirect or consequential loss.',
+            'No liability is accepted for loss arising from use of the material outside the research use conditions, or for indirect or consequential loss.',
           ],
         },
         {

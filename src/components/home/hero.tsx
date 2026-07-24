@@ -22,7 +22,7 @@ export function Hero() {
     offset: ['start start', 'end start'],
   })
 
-  // Vial drifts up slower than the page — cheap depth, no extra library.
+  // Vial drifts up slower than the page, cheap depth, no extra library.
   const vialY = useTransform(scrollYProgress, [0, 1], [0, reduced ? 0 : -70])
   const vialRotate = useTransform(scrollYProgress, [0, 1], [0, reduced ? 0 : 8])
 
@@ -60,7 +60,7 @@ export function Hero() {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="block"
             >
-              Lab-grade
+              Lab grade
             </motion.span>
 
             <span className="block">
@@ -97,8 +97,8 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.45 }}
             className="max-w-xl text-[1.05rem] leading-relaxed text-slate"
           >
-            NAD+ 500mg, lyophilised, sealed and batch-tested at 99% purity or
-            better — packed by hand and posted Australia-wide. Supplied strictly
+            NAD+ 500mg, lyophilised, sealed and batch tested at 99% purity or
+            better, packed by hand and posted Australia wide. Supplied strictly
             as a research material. {RUO_SHORT}
           </motion.p>
 
@@ -110,11 +110,11 @@ export function Hero() {
           >
             <Magnetic>
               <ButtonLink href="/shop" size="lg">
-                Shop NAD+ — from {formatPrice(cheapest.price)}
+                Shop NAD+, from {formatPrice(cheapest.price)}
               </ButtonLink>
             </Magnetic>
             <ButtonLink href="/research-use" size="lg" variant="outline">
-              Read the research-use policy
+              Read the research use policy
             </ButtonLink>
           </motion.div>
 

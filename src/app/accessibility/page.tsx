@@ -7,7 +7,7 @@ import { site } from '@/lib/site'
 export const metadata: Metadata = pageMetadata({
   title: 'Accessibility',
   description:
-    'How Zyrex Bio approaches accessibility — keyboard support, contrast, reduced motion, and how to report a barrier.',
+    'How Zyrex Bio approaches accessibility, keyboard support, contrast, reduced motion, and how to report a barrier.',
   path: '/accessibility',
 })
 
@@ -36,7 +36,7 @@ export default function AccessibilityPage() {
         {
           heading: 'Motion',
           body: [
-            'The site uses a lot of movement by design. Every animation respects the prefers-reduced-motion setting in your operating system — turn it on and reveals, parallax, marquees and hover effects stop, while the content and the ordering flow stay exactly the same.',
+            'The site uses a lot of movement by design. Every animation respects the prefers-reduced-motion setting in your operating system, turn it on and reveals, parallax, marquees and hover effects stop, while the content and the ordering flow stay exactly the same.',
           ],
         },
         {
@@ -56,7 +56,7 @@ export default function AccessibilityPage() {
           heading: 'Reporting a barrier',
           body: [
             `If something on this site blocks you, email ${site.contact.email} with the page and what happened. You will get a reply within ${site.contact.responseWindow}, and if it is something that needs fixing it moves to the front of the queue.`,
-            'If you would rather place an order by email than use the checkout form, that is always an option — say so and it will be handled that way.',
+            'If you would rather place an order by email than use the checkout form, that is always an option, say so and it will be handled that way.',
           ],
         },
       ]}

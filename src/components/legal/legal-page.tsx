@@ -114,9 +114,9 @@ export function LegalPage({
               reaches the same person at {fullAddress}.
             </p>
             <p className="mt-3 text-[0.82rem] leading-relaxed text-slate">
-              {site.name} is {site.ownership} and trades under ABN {site.abn}. It
-              is not a company or incorporated entity, so the operator named here
-              is personally responsible for the commitments on this page.
+              {site.name} is {site.ownership}. It is not a company or
+              incorporated entity, so the operator named here is personally
+              responsible for the commitments on this page.
             </p>
             <p className="mt-3 text-[0.82rem]">
               <Link

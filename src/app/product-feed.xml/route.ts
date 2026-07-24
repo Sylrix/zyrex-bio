@@ -6,8 +6,7 @@ import { priceValue } from '@/lib/utils'
 /**
  * Google Merchant Center RSS 2.0 feed.
  *
- * `force-static` is what lets a GET route handler survive `output: 'export'` —
- * the XML is written out at build time and served as a plain file.
+ * `force-static` is what lets a GET route handler survive `output: 'export'`, * the XML is written out at build time and served as a plain file.
  *
  * The research-use notice is inside every description on purpose. A shopping
  * feed for research chemicals that omits it is the fastest route to a policy
@@ -57,7 +56,7 @@ export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>${escapeXml(site.name)} — NAD+ research compounds</title>
+    <title>${escapeXml(site.name)}, NAD+ research compounds</title>
     <link>${escapeXml(absoluteUrl('/'))}</link>
     <description>${escapeXml(site.description)}</description>
 ${items}

@@ -11,7 +11,7 @@ import { formatPrice } from '@/lib/utils'
 export const metadata: Metadata = pageMetadata({
   title: 'Shop NAD+ Research Vials & Kits',
   description:
-    'Every NAD+ 500mg research pack Zyrex Bio stocks — single vials, 3, 5 and 10 vial kits at 99% purity, posted Australia-wide. Research use only.',
+    'Every NAD+ 500mg research pack Zyrex Bio stocks, single vials, 3, 5 and 10 vial kits at 99% purity, posted Australia wide. Research use only.',
   path: '/shop',
   keywords: [
     'buy NAD+ vial Australia',
@@ -43,7 +43,7 @@ export default function ShopPage() {
             All of it is <span className="text-gradient">NAD+ 500mg.</span>
           </>
         }
-        description={`Four pack sizes of the same batch-tested material. Free shipping over ${formatPrice(site.shipping.freeThreshold)}, packed within ${site.shipping.dispatchWindow}.`}
+        description={`Four pack sizes of the same batch tested material. Free shipping over ${formatPrice(site.shipping.freeThreshold)}, packed within ${site.shipping.dispatchWindow}.`}
         crumbs={[
           { name: 'Home', path: '/' },
           { name: 'Shop', path: '/shop' },

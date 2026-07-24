@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
     <LegalPage
       eyebrow="Your information"
       title="Privacy policy"
-      intro="A one-person business collects the minimum it needs to post you a parcel. Here is exactly what that is."
+      intro="A one person business collects the minimum it needs to post you a parcel. Here is exactly what that is."
       updated="24 July 2026"
       path="/privacy-policy"
       sections={[
@@ -38,9 +38,9 @@ export default function PrivacyPolicyPage() {
           ],
         },
         {
-          heading: 'What is never collected',
+          heading: 'Payment and accounts',
           body: [
-            'No card number, expiry date, CVC, bank login or PayID credential is ever entered on this site — there are no fields for them. Payment happens on the payment provider’s own hosted page, so that information never passes through here at all.',
+            'Payment is completed on the payment provider’s own hosted page, so your payment information stays with them and is handled under their security standards rather than being stored here.',
             'No account is created, no password is stored, and no profile is built about you between orders.',
           ],
         },

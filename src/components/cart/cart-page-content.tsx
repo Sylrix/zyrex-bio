@@ -174,7 +174,7 @@ export function CartPageContent() {
             <p className="text-[0.75rem] font-bold">Ways to settle up</p>
             <PaymentMarks className="mt-2.5" />
             <p className="mt-3 text-[0.72rem] leading-relaxed text-slate">
-              No card details are entered on this site. Ships from{' '}
+              Pay by secure link once your invoice arrives. Ships from{' '}
               {site.address.city}, {site.address.state} within{' '}
               {site.shipping.dispatchWindow}.
             </p>

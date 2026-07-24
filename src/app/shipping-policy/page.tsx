@@ -7,7 +7,7 @@ import { formatPrice } from '@/lib/utils'
 
 export const metadata: Metadata = pageMetadata({
   title: 'Shipping policy',
-  description: `How Zyrex Bio orders are packed and posted: ${site.shipping.dispatchWindow} dispatch, tracked ${site.shipping.carrier} delivery Australia-wide, free over ${formatPrice(site.shipping.freeThreshold)}.`,
+  description: `How Zyrex Bio orders are packed and posted: ${site.shipping.dispatchWindow} dispatch, tracked ${site.shipping.carrier} delivery Australia wide, free over ${formatPrice(site.shipping.freeThreshold)}.`,
   path: '/shipping-policy',
 })
 
@@ -23,15 +23,15 @@ export default function ShippingPolicyPage() {
         {
           heading: 'Where orders ship from',
           body: [
-            `Every order is picked, packed and lodged from ${fullAddress}. There is no third-party warehouse in between — the person who runs Zyrex Bio packs the box.`,
+            `Every order is picked, packed and lodged from ${fullAddress}. There is no third-party warehouse in between, the person who runs Zyrex Bio packs the box.`,
           ],
         },
         {
           heading: 'Rates',
           body: ['Shipping is charged at a flat rate within Australia:'],
           list: [
-            `Standard tracked — ${formatPrice(site.shipping.standardFee)}`,
-            `Express tracked — ${formatPrice(site.shipping.expressFee)}, quoted on request before dispatch`,
+            `Standard tracked, ${formatPrice(site.shipping.standardFee)}`,
+            `Express tracked, ${formatPrice(site.shipping.expressFee)}, quoted on request before dispatch`,
             `Free standard shipping on orders over ${formatPrice(site.shipping.freeThreshold)}`,
           ],
         },
@@ -51,7 +51,7 @@ export default function ShippingPolicyPage() {
         {
           heading: 'Packaging',
           body: [
-            'Vials travel upright in a moulded insert inside an insulated mailer, with the flip-off seal intact. The outer packaging is plain and carries no description of the contents beyond what the carrier requires.',
+            'Vials travel upright in a moulded insert inside an insulated mailer, with the flip off seal intact. The outer packaging is plain and carries no description of the contents beyond what the carrier requires.',
             'Materials are kept cold and out of light until the parcel is lodged, so the shortest possible time is spent in transit conditions.',
           ],
         },

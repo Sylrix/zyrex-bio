@@ -14,7 +14,7 @@ import { formatPrice } from '@/lib/utils'
 /**
  * Slide-over cart.
  *
- * Body scroll is locked while open — without it, scrolling inside the panel
+ * Body scroll is locked while open, without it, scrolling inside the panel
  * chains to the page underneath on iOS and the drawer appears to drift.
  */
 export function CartDrawer() {

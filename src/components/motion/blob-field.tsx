@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
  * Soft animated colour wash used behind hero and CTA sections.
  *
  * Purely decorative and `pointer-events-none`, so it can sit above the section
- * background without eating clicks. Blur is heavy on purpose — crisp circles
+ * background without eating clicks. Blur is heavy on purpose, crisp circles
  * read as bugs, a diffuse wash reads as a gradient.
  */
 export function BlobField({ className }: { readonly className?: string }) {

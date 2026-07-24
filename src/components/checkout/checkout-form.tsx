@@ -227,7 +227,7 @@ export function CheckoutForm() {
           {/*
             Entrance-only, deliberately. An AnimatePresence exit would look a
             little smoother, but it makes the step visible only once the
-            outgoing animation finishes — and in a backgrounded tab
+            outgoing animation finishes, and in a backgrounded tab
             requestAnimationFrame is paused, so that never happens and the
             customer is stranded on a step they have already completed. A
             keyed div swaps instantly and animates in from wherever it lands.
@@ -285,7 +285,7 @@ export function CheckoutForm() {
                 ) : (
                   <>
                     <Lock className="h-4 w-4" strokeWidth={2.8} />
-                    Place order — {formatPrice(cart.total)}
+                    Place order, {formatPrice(cart.total)}
                   </>
                 )}
               </Button>
@@ -455,7 +455,7 @@ function DeliveryStep({
           placeholder="Choose…"
           options={AU_STATES.map((state) => ({
             value: state.code,
-            label: `${state.code} — ${state.name}`,
+            label: `${state.code}, ${state.name}`,
           }))}
           value={values.state}
           error={errors.state}
@@ -529,7 +529,7 @@ function ReviewStep({
           value={
             values.paymentPreference
               ? paymentMethodLabel(values.paymentPreference)
-              : '—'
+              : ', '
           }
         />
         <Row label="Total due" value={formatPrice(total)} />
@@ -556,7 +556,7 @@ function ReviewStep({
         <Link href="/terms" className="font-semibold text-blue underline underline-offset-4">
           terms of sale
         </Link>
-        ,{' '}
+       ,{' '}
         <Link
           href="/returns-policy"
           className="font-semibold text-blue underline underline-offset-4"
@@ -570,7 +570,7 @@ function ReviewStep({
         >
           privacy policy
         </Link>
-        , and I understand this places an order rather than taking a payment.
+       , and I understand this places an order rather than taking a payment.
       </CheckboxField>
 
       <p className="rounded-2xl border-2 border-ink bg-lime/40 p-4 text-[0.8rem] leading-relaxed font-semibold">

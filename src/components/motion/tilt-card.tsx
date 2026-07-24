@@ -21,7 +21,7 @@ interface TiltCardProps {
  * 3D tilt on hover, with an optional light sweep that tracks the cursor.
  *
  * The rotation is applied to the card while `transform-style: preserve-3d` and
- * a perspective live on the wrapper — putting perspective on the card itself
+ * a perspective live on the wrapper, putting perspective on the card itself
  * flattens the effect to a skew.
  */
 export function TiltCard({

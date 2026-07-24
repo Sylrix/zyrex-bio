@@ -5,7 +5,14 @@ import nextTs from 'eslint-config-next/typescript'
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
-  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts']),
+  globalIgnores([
+    '.next/**',
+    'out/**',
+    'build/**',
+    // Netlify drops a copy of the built site here when deploying locally.
+    '.netlify/**',
+    'next-env.d.ts',
+  ]),
 ])
 
 export default eslintConfig

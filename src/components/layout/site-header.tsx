@@ -143,7 +143,7 @@ export function SiteHeader() {
                     href={item.href}
                     // Closed here rather than in an effect on `pathname`:
                     // tapping a link is the thing that dismisses the sheet, and
-                    // watching the route would also fire on a back-navigation
+                    // watching the route would also fire on a back navigation
                     // the customer did not initiate from this menu.
                     onClick={() => setMenuOpen(false)}
                     className={cn(

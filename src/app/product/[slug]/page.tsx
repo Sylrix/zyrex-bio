@@ -32,8 +32,8 @@ export async function generateMetadata({
   }
 
   return pageMetadata({
-    title: `${product.name} — ${product.purity} Purity, Research Use Only`,
-    description: `${product.summary} ${product.vials} × ${product.strength} NAD+ lyophilised powder at ${product.purity} purity, ${formatPrice(product.price)} ${site.currency}, posted Australia-wide. Research use only.`,
+    title: `${product.name}, ${product.purity} Purity, Research Use Only`,
+    description: `${product.summary} ${product.vials} × ${product.strength} NAD+ lyophilised powder at ${product.purity} purity, ${formatPrice(product.price)} ${site.currency}, posted Australia wide. Research use only.`,
     path: `/product/${product.slug}`,
     image: product.image,
     keywords: [product.name, 'NAD+ research vial', `NAD+ ${product.strength}`],
@@ -97,7 +97,7 @@ export default async function ProductPage({
 
             <ul className="mt-5 grid grid-cols-3 gap-3">
               {[
-                { icon: Snowflake, label: 'Cold held 2–8°C' },
+                { icon: Snowflake, label: 'Cold held 2 to 8°C' },
                 { icon: Truck, label: 'Tracked AU post' },
                 { icon: ShieldAlert, label: 'Research use only' },
               ].map((item) => (
@@ -187,9 +187,8 @@ export default async function ProductPage({
             </h2>
             <p className="mt-2 text-[0.86rem] leading-relaxed text-slate">
               Pick card, bank transfer, PayID, Apple Pay or Google Pay at
-              checkout. No card details are entered on this site — an invoice
-              with a secure link for your chosen method is emailed within{' '}
-              {site.contact.responseWindow}.
+              checkout. An invoice with a secure payment link for your chosen
+              method is emailed within {site.contact.responseWindow}.
             </p>
             <PaymentMarks className="mt-4" />
           </div>

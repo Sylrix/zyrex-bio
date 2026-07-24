@@ -16,9 +16,9 @@ import { faqJsonLd, itemListJsonLd, pageMetadata } from '@/lib/seo'
 import { RUO_NOTICE, site } from '@/lib/site'
 
 export const metadata: Metadata = pageMetadata({
-  title: `${site.name} — NAD+ Research Compounds, 99% Purity | Australia`,
+  title: `${site.name} | NAD+ Research Compounds, 99% Purity | Australia`,
   description:
-    'Buy NAD+ 500mg research vials at 99% purity, packed and posted Australia-wide by an independent sole trader in Melbourne. For laboratory research use only — not for human consumption.',
+    'Buy NAD+ 500mg research vials at 99% purity, packed and posted Australia wide by an independent sole trader in Bacchus Marsh, Victoria. For laboratory research use only, not for human consumption.',
   path: '/',
   keywords: [
     'NAD+ research vial',
@@ -50,7 +50,7 @@ export default function HomePage() {
   )
 }
 
-/** Compliance is not a footnote here — it gets its own band, mid-page. */
+/** Compliance is not a footnote here, it gets its own band, mid-page. */
 function ResearchBand() {
   return (
     <section className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -70,7 +70,7 @@ function ResearchBand() {
                 href="/research-use"
                 className="font-semibold underline underline-offset-4"
               >
-                Read the full research-use policy
+                Read the full research use policy
               </Link>
               .
             </p>

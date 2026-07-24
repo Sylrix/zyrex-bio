@@ -3,13 +3,15 @@
  *
  * Zyrex Bio is run by one person as a sole trader. Nothing on this site may
  * describe it as a company, corporation, laboratory group, "we the team" or
- * anything else that implies an incorporated entity or staff — that wording is
+ * anything else that implies an incorporated entity or staff. That wording is
  * both untrue and the exact thing that gets an individual merchant account
  * pulled. Keep the voice singular and personal.
  *
- * >>> BEFORE GOING LIVE: replace the address, ABN and email below with the
- * >>> real registered details. They are placeholders that look plausible so
- * >>> the layout can be reviewed, and nothing else.
+ * Two house rules for any copy added here or anywhere else on the site:
+ *  1. No dash punctuation in customer facing text. Use a comma, a full stop or
+ *     the word "to" for ranges.
+ *  2. Do not describe what the checkout does not collect. State how payment is
+ *     completed and stop there.
  */
 
 export const site = {
@@ -19,10 +21,10 @@ export const site = {
   ownership: 'independently owned and run by a single person (sole trader)',
   tagline: 'NAD+ research compounds, supplied for laboratory use only.',
   description:
-    'Zyrex Bio supplies NAD+ research compounds at 99% purity for laboratory and research use only. Independently run and dispatched from Melbourne, Australia. Not for human or veterinary use.',
+    'Zyrex Bio supplies NAD+ research compounds at 99% purity for laboratory and research use only. Independently run and dispatched from Bacchus Marsh, Victoria. Not for human or veterinary use.',
   /**
    * Where the site actually answers. Canonicals, JSON-LD @ids, the sitemap and
-   * the product feed are all built from this, so it has to match reality — a
+   * the product feed are all built from this, so it has to match reality. A
    * canonical pointing at a domain that does not resolve yet is worse than no
    * canonical at all. Set NEXT_PUBLIC_SITE_URL at build time; the fallback is
    * the eventual custom domain.
@@ -36,26 +38,26 @@ export const site = {
   currency: 'AUD',
   currencySymbol: '$',
 
+  /** Verifies the property for Google Search Console and Merchant Center. */
+  googleSiteVerification: 'ZFSF7P94tIXo8j8uFX6j_343SWZoyRAiI3rIoajPKg4',
+
   contact: {
     email: 'support@zyrexbioau.com',
-    /** Sole trader with no staffed phone line — email is the only channel. */
+    /** Sole trader with no staffed phone line, so email is the only channel. */
     phone: null as string | null,
-    hours: 'Monday to Friday, 9:00am – 5:00pm AEST',
+    hours: 'Monday to Friday, 9:00am to 5:00pm AEST',
     responseWindow: '1 business day',
   },
 
   address: {
-    line1: '12 Barkly Street',
-    line2: 'Suite 4',
-    city: 'Brunswick',
+    line1: 'Hallets Way',
+    line2: '',
+    city: 'Bacchus Marsh',
     state: 'VIC',
-    postcode: '3056',
+    postcode: '3340',
     country: 'Australia',
     countryCode: 'AU',
   },
-
-  /** Australian Business Number held by the individual, not a company. */
-  abn: '00 000 000 000',
 
   /** Registered sole trader name shown on invoices and policies. */
   proprietor: 'the owner of Zyrex Bio',
@@ -64,8 +66,8 @@ export const site = {
     freeThreshold: 250,
     standardFee: 14.95,
     expressFee: 24.95,
-    dispatchWindow: '1–2 business days',
-    deliveryWindow: '2–6 business days Australia-wide',
+    dispatchWindow: '1 to 2 business days',
+    deliveryWindow: '2 to 6 business days Australia wide',
     carrier: 'Australia Post',
   },
 
@@ -95,4 +97,4 @@ export const shortAddress = `${site.address.city} ${site.address.state}, ${site.
 export const RUO_NOTICE =
   'For laboratory research use only. Not for human or veterinary use, not a therapeutic good, and not for diagnostic, cosmetic or food purposes.'
 
-export const RUO_SHORT = 'Research use only — not for human consumption.'
+export const RUO_SHORT = 'Research use only. Not for human consumption.'

@@ -32,8 +32,8 @@ export default function CookiePolicyPage() {
             'Two pieces of browser storage make the shop work. Both stay on your device and are readable only by this site:',
           ],
           list: [
-            'zyrexbio.cart.v1 — local storage holding the items in your cart so it survives a refresh. Cleared when you empty the cart.',
-            'zyrexbio.lastOrder.v1 — session storage holding your order reference so the confirmation page can display it. Cleared when you close the tab.',
+            'zyrexbio.cart.v1, local storage holding the items in your cart so it survives a refresh. Cleared when you empty the cart.',
+            'zyrexbio.lastOrder.v1, session storage holding your order reference so the confirmation page can display it. Cleared when you close the tab.',
           ],
         },
         {
@@ -45,7 +45,7 @@ export default function CookiePolicyPage() {
         {
           heading: 'Clearing it',
           body: [
-            'Emptying your cart removes the cart entry. Closing the tab removes the confirmation entry. Clearing site data in your browser settings removes both immediately, and the site will keep working normally afterwards — you will simply start with an empty cart.',
+            'Emptying your cart removes the cart entry. Closing the tab removes the confirmation entry. Clearing site data in your browser settings removes both immediately, and the site will keep working normally afterwards, you will simply start with an empty cart.',
           ],
         },
         {

@@ -36,8 +36,12 @@ const space = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — NAD+ Research Compounds, 99% Purity | Australia`,
+    default: `${site.name} | NAD+ Research Compounds, 99% Purity | Australia`,
     template: `%s | ${site.name}`,
+  },
+  verification: {
+    // Verifies the property for Google Search Console and Merchant Center.
+    google: site.googleSiteVerification,
   },
   description: site.description,
   applicationName: site.name,
@@ -63,7 +67,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: site.locale,
     url: absoluteUrl('/'),
-    title: `${site.name} — NAD+ Research Compounds, 99% Purity`,
+    title: `${site.name} NAD+ Research Compounds, 99% Purity`,
     description: site.description,
     images: [
       {
@@ -76,7 +80,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${site.name} — NAD+ Research Compounds`,
+    title: `${site.name} NAD+ Research Compounds`,
     description: site.description,
     images: ['/products/nad-plus-500mg.webp'],
   },

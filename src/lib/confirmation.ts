@@ -24,7 +24,7 @@ export interface Confirmation {
  */
 export function subscribeToConfirmation(): () => void {
   // Written once by the checkout before it navigates here, then never changed
-  // while this page is open — there is nothing to listen to.
+  // while this page is open, there is nothing to listen to.
   return () => {}
 }
 

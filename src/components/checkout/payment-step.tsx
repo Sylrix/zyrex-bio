@@ -9,12 +9,14 @@ import { site } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
 /**
- * Step 2 — a preference, never a payment.
+ * Step 2, a preference, never a payment.
  *
- * There is deliberately no card number, expiry or CVC field anywhere in this
- * form, and the notice above the group says so in the plainest words
- * available. The marks are shown so a customer can confirm their method is
- * accepted before they commit to the order.
+ * The form captures which method the customer wants and nothing more; payment
+ * itself happens on the provider's hosted page after the invoice goes out. The
+ * marks are shown so a customer can confirm their method is accepted before
+ * they commit to the order.
+ *
+ * Copy rule: state what happens, not what this form does not ask for.
  */
 export function PaymentStep({
   value,
@@ -34,11 +36,11 @@ export function PaymentStep({
         <ShieldOff className="mt-0.5 h-5 w-5 shrink-0" strokeWidth={2.4} aria-hidden="true" />
         <p className="text-[0.86rem] leading-relaxed font-medium">
           <span className="font-extrabold">
-            No card details are taken on this site.
+            Placing this order does not charge you.
           </span>{' '}
-          There is no card number, expiry or CVC field anywhere in this form.
-          Pick how you would rather settle up and an invoice with a secure link
-          for that method is emailed within {site.contact.responseWindow}.
+          Pick how you would rather settle up and an invoice with a secure
+          payment link for that method is emailed within{' '}
+          {site.contact.responseWindow}.
         </p>
       </div>
 

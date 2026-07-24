@@ -69,7 +69,7 @@ export function OrderSummary() {
       </dl>
 
       <p className="mt-4 text-[0.72rem] leading-relaxed text-slate">
-        Prices in {site.currency}. Nothing is charged now — an invoice with a
+        Prices in {site.currency}. Nothing is charged now, an invoice with a
         secure payment link is emailed after the order is confirmed. {RUO_SHORT}
       </p>
     </aside>

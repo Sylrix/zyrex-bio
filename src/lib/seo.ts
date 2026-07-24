@@ -63,9 +63,9 @@ export function pageMetadata({
 type Json = Record<string, unknown>
 
 /**
- * Organisation markup for a one-person business.
+ * Organisation markup for a one person business.
  *
- * `OnlineStore` is a Schema.org type, not a claim of incorporation — the copy
+ * `OnlineStore` is a Schema.org type, not a claim of incorporation, the copy
  * in `description` states plainly that this is a sole trader, and no employee
  * count, founder team or corporate structure is asserted anywhere.
  */

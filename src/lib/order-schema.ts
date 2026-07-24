@@ -85,7 +85,7 @@ export const orderSchema = z.object({
     .max(1000, 'Please keep delivery notes under 1000 characters.')
     .optional()
     .or(z.literal('')),
-  /** A preference only — no card details are collected on this site. */
+  /** A preference only. Payment happens later, on the provider’s page. */
   paymentPreference: z.enum(paymentMethodIds, {
     message: 'Please choose how you would like to pay.',
   }),

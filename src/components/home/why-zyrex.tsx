@@ -6,7 +6,7 @@ const REASONS = [
   {
     icon: FileCheck2,
     title: 'Batch documentation on request',
-    body: 'Every batch is assigned a reference printed on the vial label. Ask and the corresponding analysis sheet is emailed back — no account, no sales call.',
+    body: 'Every batch is assigned a reference printed on the vial label. Ask and the corresponding analysis sheet is emailed back, no account, no sales call.',
     tone: 'bg-blue-soft',
   },
   {
@@ -17,14 +17,14 @@ const REASONS = [
   },
   {
     icon: Snowflake,
-    title: 'Cold-held, light-protected',
-    body: 'Vials sit at 2–8°C and out of light from arrival to dispatch, then travel in an insulated mailer with the seal intact.',
+    title: 'Cold held and light protected',
+    body: 'Vials sit at 2 to 8°C and out of light from arrival to dispatch, then travel in an insulated mailer with the seal intact.',
     tone: 'bg-lilac-soft',
   },
   {
     icon: UserRound,
     title: 'One person, start to finish',
-    body: 'Zyrex Bio is run by a single sole trader. The person who answers your email is the person who packs the box — there is no support tier to escalate through.',
+    body: 'Zyrex Bio is run by a single sole trader. The person who answers your email is the person who packs the box, there is no support tier to escalate through.',
     tone: 'bg-lime/40',
   },
   {

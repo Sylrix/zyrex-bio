@@ -40,7 +40,7 @@ export function SiteFooter() {
             <Logo />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-slate">
               {site.tagline} Packed and posted from {site.address.city},{' '}
-              {site.address.state} by a one-person operation — no call centre, no
+              {site.address.state} by a one person operation, no call centre, no
               middlemen, just the person who packed your box.
             </p>
 
@@ -85,8 +85,8 @@ export function SiteFooter() {
         <div className="mt-8 flex flex-col gap-5 border-t-2 border-line pt-7 md:flex-row md:items-center md:justify-between">
           <div className="flex flex-col gap-1.5">
             <p className="text-[0.8rem] text-slate">
-              © {site.founded}–{new Date().getFullYear()} {site.name}. Trading as a
-              sole trader in Australia · ABN {site.abn}.
+              © {site.founded} to {new Date().getFullYear()} {site.name}. Trading
+              as a sole trader in Australia.
             </p>
             <p className="text-[0.8rem] text-slate">
               Zyrex Bio is {site.ownership}. It is not a company, laboratory group
@@ -97,7 +97,7 @@ export function SiteFooter() {
           <div className="flex flex-col items-start gap-2 md:items-end">
             <PaymentMarks />
             <p className="text-[0.72rem] text-slate">
-              No card details are entered on this site.
+              Paid by secure link sent with your invoice.
             </p>
           </div>
         </div>

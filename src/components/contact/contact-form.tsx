@@ -78,7 +78,7 @@ export function ContactForm() {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           access_key: ACCESS_KEY,
-          subject: `Zyrex Bio enquiry — ${parsed.data.subject}`,
+          subject: `Zyrex Bio enquiry, ${parsed.data.subject}`,
           from_name: `${site.name} contact form`,
           replyto: parsed.data.email,
           name: parsed.data.name,
@@ -192,9 +192,8 @@ export function ContactForm() {
       </Button>
 
       <p className="text-[0.75rem] leading-relaxed text-slate">
-        Your name, email and message are used only to answer your enquiry. Please
-        do not send card, bank or PayID details — they are never needed and will
-        be deleted on sight.
+        Your name, email and message are used only to answer your enquiry and
+        are never passed on to anyone else.
       </p>
     </form>
   )

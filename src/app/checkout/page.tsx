@@ -7,7 +7,7 @@ import { pageMetadata } from '@/lib/seo'
 export const metadata: Metadata = pageMetadata({
   title: 'Checkout',
   description:
-    'Complete your Zyrex Bio order. Choose card, bank transfer, PayID, Apple Pay or Google Pay — no card details are entered on this site.',
+    'Complete your Zyrex Bio order. Choose card, bank transfer, PayID, Apple Pay or Google Pay, then settle the invoice through a secure payment link.',
   path: '/checkout',
   noIndex: true,
 })
@@ -22,7 +22,7 @@ export default function CheckoutPage() {
             Almost <span className="text-gradient">done.</span>
           </>
         }
-        description="Three short steps. Nothing is charged here — you will get an invoice with a secure payment link for the method you pick."
+        description="Three short steps. Nothing is charged here, you will get an invoice with a secure payment link for the method you pick."
         crumbs={[
           { name: 'Home', path: '/' },
           { name: 'Cart', path: '/cart' },

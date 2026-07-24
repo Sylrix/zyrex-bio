@@ -11,7 +11,7 @@ import { site } from '@/lib/site'
 export const metadata: Metadata = pageMetadata({
   title: 'Frequently asked questions',
   description:
-    'Purity, storage, shipping, payment, returns and research-use conditions — the questions people actually ask before ordering NAD+ from Zyrex Bio.',
+    'Purity, storage, shipping, payment, returns and research use conditions, the questions people actually ask before ordering NAD+ from Zyrex Bio.',
   path: '/faq',
   keywords: ['NAD+ research FAQ', 'research chemical shipping Australia'],
 })
@@ -51,7 +51,7 @@ export default function FaqPage() {
               Still not covered?
             </h2>
             <p className="mx-auto mt-2 max-w-md text-[0.9rem] leading-relaxed text-slate">
-              Email {site.contact.email} — replies land within{' '}
+              Email {site.contact.email}, replies land within{' '}
               {site.contact.responseWindow}, {site.contact.hours}.
             </p>
             <ButtonLink href="/contact" className="mt-5">

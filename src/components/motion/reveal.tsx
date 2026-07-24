@@ -23,7 +23,7 @@ const OFFSETS: Record<Direction, { x?: number; y?: number; scale?: number }> = {
 }
 
 /**
- * Scroll-in reveal. `once` matters — re-animating on every scroll pass reads
+ * Scroll-in reveal. `once` matters, re-animating on every scroll pass reads
  * as a glitch rather than a flourish, and it thrashes the compositor on long
  * pages. When the OS asks for reduced motion this renders a plain div.
  */

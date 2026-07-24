@@ -67,9 +67,8 @@ export default function ContactPage() {
             <InfoCard icon={MapPin} title="Registered address">
               <address className="font-semibold not-italic">{fullAddress}</address>
               <p className="mt-1 text-[0.82rem] text-slate">
-                Postal and registered address for {site.name}, trading as a sole
-                trader under ABN {site.abn}. Not a shopfront — please email
-                before sending anything by post.
+                Postal and registered address for {site.name}. Not a shopfront,
+                so please email before sending anything by post.
               </p>
             </InfoCard>
 

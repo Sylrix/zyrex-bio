@@ -19,7 +19,7 @@ export function OrderConfirmedContent() {
   const [copied, setCopied] = useState(false)
 
   // sessionStorage is an external store, and it does not exist while this page
-  // is prerendered — hence the separate server snapshot.
+  // is prerendered, hence the separate server snapshot.
   const raw = useSyncExternalStore(
     subscribeToConfirmation,
     getConfirmationSnapshot,
@@ -45,7 +45,7 @@ export function OrderConfirmedContent() {
         </h2>
         <p className="text-sm leading-relaxed text-slate">
           Confirmation details are only held for the current browser session. If
-          you have already ordered, the email is on its way — otherwise start a
+          you have already ordered, the email is on its way, otherwise start a
           new order below.
         </p>
         <ButtonLink href="/shop" size="lg">

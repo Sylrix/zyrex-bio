@@ -3,7 +3,7 @@ import { CART_STORAGE_KEY, parseCart, type CartLine } from '@/lib/cart-store'
 /**
  * localStorage as a proper external store.
  *
- * The cart genuinely lives outside React — in the browser, shared by every
+ * The cart genuinely lives outside React, in the browser, shared by every
  * open tab. Modelling it that way (subscribe / getSnapshot) rather than
  * copying it into state inside an effect means there is no hydration flash to
  * paper over, and a change made in one tab lands in the others for free.
@@ -71,7 +71,7 @@ export function writeCart(lines: readonly CartLine[]): void {
   try {
     window.localStorage.setItem(CART_STORAGE_KEY, serialised)
   } catch {
-    // Storage full or blocked — keep the in-memory cart working regardless.
+    // Storage full or blocked, keep the in-memory cart working regardless.
   }
 
   snapshot = serialised

@@ -21,8 +21,8 @@ export function FeaturedGrid() {
               </h2>
               <p className="mt-4 text-[1.02rem] leading-relaxed text-slate">
                 Same vial, same batch standard, same seal. Pick a single unit to
-                trial the material or a kit if a project needs the volume — the
-                per-vial rate drops as the pack gets bigger.
+                trial the material or a kit if a project needs the volume, the
+                per vial rate drops as the pack gets bigger.
               </p>
             </div>
 

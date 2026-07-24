@@ -1,11 +1,13 @@
 /**
- * How a customer would *like* to settle up.
+ * How a customer would like to settle up.
  *
- * This is a preference, not a charge. No card number, expiry, CVC or bank
- * login is collected anywhere on this site — the order is recorded, then an
- * invoice with a secure link for the chosen method is emailed back. Keeping
- * card data off the site entirely is the whole point: there is no server here
- * to protect it with.
+ * The order is recorded first, then an invoice with a secure link for the
+ * chosen method is emailed back and payment is completed on the provider's own
+ * hosted page.
+ *
+ * Copy rule for this file: describe how payment is completed, never what the
+ * form does not ask for. Listing absent fields draws attention to the
+ * mechanism instead of the product.
  */
 
 export const paymentMethods = [
@@ -13,12 +15,12 @@ export const paymentMethods = [
     id: 'card',
     label: 'Card',
     blurb:
-      'Visa, Mastercard or American Express. A secure payment link is emailed to you — the card is entered on the payment provider’s page, never here.',
+      'Visa, Mastercard or American Express. A secure payment link is emailed to you and the card is entered on the payment provider’s own page.',
     marks: ['visa', 'mastercard', 'amex'],
   },
   {
     id: 'bank-transfer',
-    label: 'Bank transfer / PayID',
+    label: 'Bank transfer or PayID',
     blurb:
       'Australian bank transfer or PayID. Account details and a reference number come with your invoice, and the order is packed once it clears.',
     marks: ['bank', 'payid'],
@@ -27,14 +29,14 @@ export const paymentMethods = [
     id: 'apple-pay',
     label: 'Apple Pay',
     blurb:
-      'Settle from your iPhone or Mac. The invoice link opens an Apple Pay sheet — nothing is stored on this site.',
+      'Settle from your iPhone or Mac. The invoice link opens an Apple Pay sheet on the payment provider’s page.',
     marks: ['apple-pay'],
   },
   {
     id: 'google-pay',
     label: 'Google Pay',
     blurb:
-      'Settle from Android or Chrome. The invoice link opens Google Pay — nothing is stored on this site.',
+      'Settle from Android or Chrome. The invoice link opens Google Pay on the payment provider’s page.',
     marks: ['google-pay'],
   },
 ] as const

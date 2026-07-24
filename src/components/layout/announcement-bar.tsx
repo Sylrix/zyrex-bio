@@ -8,7 +8,7 @@ const MESSAGES = [
   `Free shipping over ${formatPrice(site.shipping.freeThreshold)}`,
   `Posted from ${site.address.city} ${site.address.state}`,
   'Packed within ' + site.shipping.dispatchWindow,
-  'Independently run — one person, no middlemen',
+  'Independently run, one person, no middlemen',
 ]
 
 /**

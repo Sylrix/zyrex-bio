@@ -7,7 +7,7 @@ import { Reveal } from '@/components/motion/reveal'
 import { ButtonLink } from '@/components/ui/button'
 import { RUO_SHORT, site } from '@/lib/site'
 
-const TICKER = ['NAD+ 500MG', '99% PURITY', 'RESEARCH USE ONLY', 'SHIPS AU-WIDE', 'BATCH TESTED']
+const TICKER = ['NAD+ 500MG', '99% PURITY', 'RESEARCH USE ONLY', 'SHIPS AU WIDE', 'BATCH TESTED']
 
 export function ClosingCta() {
   return (

@@ -4,13 +4,13 @@ import { cn } from '@/lib/utils'
 
 /**
  * Wordmark. Drawn rather than imaged so it stays crisp at any size and needs
- * no extra request — the swoosh echoes the arc on the vial label.
+ * no extra request, the swoosh echoes the arc on the vial label.
  */
 export function Logo({ className }: { readonly className?: string }) {
   return (
     <Link
       href="/"
-      aria-label="Zyrex Bio — home"
+      aria-label="Zyrex Bio, home"
       className={cn('group inline-flex items-center gap-2.5', className)}
     >
       <span className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl border-2 border-ink bg-ink transition-transform duration-300 group-hover:-rotate-6">

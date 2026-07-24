@@ -15,7 +15,7 @@ const STEPS = [
   {
     number: '03',
     title: 'Choose how to settle',
-    body: 'Card, bank transfer, PayID, Apple Pay or Google Pay. No card number is ever entered on this site — an invoice with a secure link is emailed to you.',
+    body: 'Card, bank transfer, PayID, Apple Pay or Google Pay. An invoice with a secure payment link for your choice is emailed straight back.',
   },
   {
     number: '04',

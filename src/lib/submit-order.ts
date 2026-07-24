@@ -14,8 +14,8 @@ import { formatPrice } from '@/lib/utils'
  * Two consequences worth being explicit about:
  *  - The access key is public by design. It can only submit to the one inbox
  *    it is bound to, so the worst case is junk email, not data exposure.
- *  - No card, expiry, CVC or bank credential is ever part of this payload.
- *    `paymentPreference` is a word like "card" — nothing more. Anything else
+ *  - The payload carries no payment credential of any kind.
+ *    `paymentPreference` is a word like "card", nothing more. Anything else
  *    would be putting payment credentials through an email relay.
  */
 
@@ -24,7 +24,7 @@ const ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? ''
 
 export interface SubmitResult {
   readonly reference: string
-  /** False when no key is configured — the order still needs emailing in. */
+  /** False when no key is configured, the order still needs emailing in. */
   readonly delivered: boolean
   readonly error?: string
 }
@@ -48,7 +48,7 @@ function orderSummaryText(order: OrderInput, totals: CartTotals, reference: stri
   const lines = totals.lines
     .map(
       (line) =>
-        `  • ${line.qty} × ${line.product.name} (${line.product.sku}) — ${formatPrice(line.lineTotal)}`
+        `  • ${line.qty} × ${line.product.name} (${line.product.sku}), ${formatPrice(line.lineTotal)}`
     )
     .join('\n')
 
@@ -109,7 +109,7 @@ export async function submitOrder(
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({
         access_key: ACCESS_KEY,
-        subject: `Zyrex Bio order ${reference} — ${formatPrice(totals.total)}`,
+        subject: `Zyrex Bio order ${reference}, ${formatPrice(totals.total)}`,
         from_name: `${site.name} storefront`,
         replyto: order.email,
         reference,
@@ -134,7 +134,7 @@ export async function submitOrder(
       reference,
       delivered: false,
       error:
-        'Your order could not be sent — the connection failed. Please email the reference above and it will be processed.',
+        'Your order could not be sent, the connection failed. Please email the reference above and it will be processed.',
     }
   }
 }
