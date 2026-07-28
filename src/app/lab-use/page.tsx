@@ -25,7 +25,7 @@ export default function LabUsePage() {
           heading: 'What these products are',
           body: [
             `Everything listed on this site is a laboratory material supplied to qualified individuals for use in a laboratory setting. ${RUO_NOTICE}`,
-            'The vials contain a lyophilised powder intended for in-vitro and analytical work. They are not sterile injectables, they are not compounded for administration, and they are not prepared, labelled or supplied as anything a person or an animal should receive.',
+            'The vials contain a lyophilised powder intended for in-vitro and analytical work. They are not sterile injectables, they are not formulated for administration, and they are not prepared, labelled or supplied as anything a person or an animal should receive.',
           ],
         },
         {
