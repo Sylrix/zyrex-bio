@@ -1,8 +1,8 @@
 {
-  "name": "zyrex-bio",
+  "name": "zyrex",
   "version": "1.0.0",
   "private": true,
-  "description": "Zyrex Bio — NAD+ research compounds supplied for laboratory research use only. Independently run from Melbourne, Australia.",
+  "description": "Zyrex, high purity 500mg vials supplied for laboratory use only. Independently run from Bacchus Marsh, Victoria.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

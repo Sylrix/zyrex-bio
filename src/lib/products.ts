@@ -3,11 +3,11 @@ import { RUO_NOTICE } from '@/lib/site'
 /**
  * The catalogue.
  *
- * Everything here is NAD+ in lyophilised vial form: one product photographed,
- * sold singly and in multi vial packs. Copy stays deliberately plain. What is
- * in the vial, how much, how it is presented, how it ships. No dosing, no
- * effects, no benefits, no protocols. That restraint is what keeps the listing
- * reviewable and honest for a research use only catalogue.
+ * Everything here is the same 500mg vial, sold singly and in multi vial packs.
+ * Copy stays deliberately plain. What is in the vial by format and quantity,
+ * how it is presented, how it ships. No substance name, no dosing, no effects,
+ * no benefits, no protocols, and no category jargon. That restraint is what
+ * keeps the listing reviewable and honest.
  */
 
 export interface Product {
@@ -40,34 +40,34 @@ export interface Product {
  */
 export const GOOGLE_PRODUCT_CATEGORY = '3002'
 
-const IMAGE = '/products/nad-plus-500mg.webp'
+const IMAGE = '/products/zyrex-500mg.webp'
 const IMAGE_ALT =
-  'Zyrex Bio NAD+ 500mg research vial with a teal flip top seal and black label'
+  'Zyrex 500mg vial with a teal flip top seal and a black label'
 
 const SHARED_SPECS = [
-  { label: 'Compound', value: 'NAD+ (nicotinamide adenine dinucleotide)' },
+  { label: 'Format', value: 'Lyophilised powder, sealed glass vial' },
+  { label: 'Fill', value: '500mg per vial' },
   { label: 'Purity', value: '99% or better by HPLC' },
-  { label: 'Presentation', value: 'Lyophilised powder, sealed glass vial' },
   { label: 'Vial closure', value: 'Butyl stopper, aluminium flip off seal' },
   { label: 'Storage', value: 'Store sealed at 2 to 8°C, protected from light' },
-  { label: 'Intended use', value: 'Laboratory research use only' },
+  { label: 'Intended use', value: 'Laboratory use only' },
   { label: 'Origin', value: 'Dispatched from Bacchus Marsh, Victoria' },
 ] as const
 
 function packDescription(vials: number): readonly string[] {
   const unit = vials === 1 ? 'vial' : 'vials'
   return [
-    `${vials} x 500mg NAD+ ${unit} supplied as a lyophilised powder in sealed glass vials, tested at 99% purity or better.`,
-    'Each vial is sealed with a butyl stopper and aluminium flip off cap, labelled with the compound, quantity and batch, then packed in a moulded insert so nothing moves in transit.',
-    'Supplied strictly as a research material for use by qualified individuals in a laboratory setting.',
+    `${vials} x 500mg ${unit} of high purity lyophilised material, supplied in sealed glass vials and tested at 99% purity or better.`,
+    'Each vial is sealed with a butyl stopper and aluminium flip off cap, labelled with the contents, quantity and batch, then packed in a moulded insert so nothing moves in transit.',
+    'Supplied strictly for use by qualified individuals in a laboratory setting.',
     RUO_NOTICE,
   ]
 }
 
 export const products: readonly Product[] = [
   {
-    slug: 'nad-plus-500mg-single-vial',
-    name: 'NAD+ 500mg Single Vial',
+    slug: 'zyrex-500mg-single-vial',
+    name: 'Zyrex 500mg Single Vial',
     summary: 'One 500mg vial. The standard unit.',
     price: 89,
     compareAt: null,
@@ -77,7 +77,7 @@ export const products: readonly Product[] = [
     form: 'Lyophilised powder',
     image: IMAGE,
     imageAlt: IMAGE_ALT,
-    sku: 'ZB-NAD500-01',
+    sku: 'ZX-500-01',
     gtin: null,
     badge: null,
     description: packDescription(1),
@@ -86,8 +86,8 @@ export const products: readonly Product[] = [
     featured: true,
   },
   {
-    slug: 'nad-plus-500mg-3-vial-kit',
-    name: 'NAD+ 500mg 3 Vial Kit',
+    slug: 'zyrex-500mg-3-vial-kit',
+    name: 'Zyrex 500mg 3 Vial Kit',
     summary: 'Three 500mg vials in one insert.',
     price: 249,
     compareAt: 267,
@@ -97,7 +97,7 @@ export const products: readonly Product[] = [
     form: 'Lyophilised powder',
     image: IMAGE,
     imageAlt: IMAGE_ALT,
-    sku: 'ZB-NAD500-03',
+    sku: 'ZX-500-03',
     gtin: null,
     badge: 'Most picked',
     description: packDescription(3),
@@ -106,8 +106,8 @@ export const products: readonly Product[] = [
     featured: true,
   },
   {
-    slug: 'nad-plus-500mg-5-vial-kit',
-    name: 'NAD+ 500mg 5 Vial Kit',
+    slug: 'zyrex-500mg-5-vial-kit',
+    name: 'Zyrex 500mg 5 Vial Kit',
     summary: 'Five 500mg vials, better per vial rate.',
     price: 399,
     compareAt: 445,
@@ -117,7 +117,7 @@ export const products: readonly Product[] = [
     form: 'Lyophilised powder',
     image: IMAGE,
     imageAlt: IMAGE_ALT,
-    sku: 'ZB-NAD500-05',
+    sku: 'ZX-500-05',
     gtin: null,
     badge: 'Best value',
     description: packDescription(5),
@@ -126,8 +126,8 @@ export const products: readonly Product[] = [
     featured: true,
   },
   {
-    slug: 'nad-plus-500mg-10-vial-case',
-    name: 'NAD+ 500mg 10 Vial Case',
+    slug: 'zyrex-500mg-10-vial-case',
+    name: 'Zyrex 500mg 10 Vial Case',
     summary: 'Ten 500mg vials in a foam lined case.',
     price: 749,
     compareAt: 890,
@@ -137,7 +137,7 @@ export const products: readonly Product[] = [
     form: 'Lyophilised powder',
     image: IMAGE,
     imageAlt: IMAGE_ALT,
-    sku: 'ZB-NAD500-10',
+    sku: 'ZX-500-10',
     gtin: null,
     badge: 'Bulk',
     description: packDescription(10),

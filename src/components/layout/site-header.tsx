@@ -15,7 +15,7 @@ import { cn } from '@/lib/utils'
 const NAV = [
   { href: '/shop', label: 'Shop' },
   { href: '/about', label: 'About' },
-  { href: '/research-use', label: 'Research use' },
+  { href: '/lab-use', label: 'Laboratory use' },
   { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
 ] as const
@@ -78,7 +78,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-2">
           <Magnetic strength={0.25} className="hidden sm:block">
             <ButtonLink href="/shop" size="sm" variant="ink">
-              Buy NAD+
+              Buy Zyrex
             </ButtonLink>
           </Magnetic>
 
@@ -162,7 +162,7 @@ export function SiteHeader() {
                   className="w-full"
                   size="md"
                 >
-                  Buy NAD+
+                  Buy Zyrex
                 </ButtonLink>
               </li>
             </ul>

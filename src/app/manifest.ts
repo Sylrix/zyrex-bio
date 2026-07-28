@@ -7,7 +7,7 @@ export const dynamic = 'force-static'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${site.name}, NAD+ Research Compounds`,
+    name: `${site.name} | High Purity Lab Vials`,
     short_name: site.name,
     description: site.description,
     start_url: '/',

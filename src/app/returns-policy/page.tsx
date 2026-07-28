@@ -7,7 +7,7 @@ import { site } from '@/lib/site'
 export const metadata: Metadata = pageMetadata({
   title: 'Returns and refunds',
   description:
-    'Zyrex Bio returns policy: 30 days on unopened, sealed vials, plus your rights under Australian Consumer Law.',
+    'Zyrex returns policy: 30 days on unopened, sealed vials, plus your rights under Australian Consumer Law.',
   path: '/returns-policy',
 })
 
@@ -31,7 +31,7 @@ export default function ReturnsPolicyPage() {
           heading: 'What cannot be returned',
           body: [
             'Once a seal is broken the material cannot be verified or resold, so opened vials are not returnable other than where Australian Consumer Law requires a remedy.',
-            'This is not a technicality, a research material whose chain of custody is unknown has no place going back into stock for someone else.',
+            'This is not a technicality, a laboratory material whose chain of custody is unknown has no place going back into stock for someone else.',
           ],
         },
         {

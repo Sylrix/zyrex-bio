@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>Zyrex Bio, NAD+ research compounds</title>
+    <title>Zyrex, Zyrex 500mg laboratory materials</title>
     <link>https://zyrex-bio.netlify.app/</link>
-    <description>Zyrex Bio supplies NAD+ research compounds at 99% purity for laboratory and research use only. Independently run and dispatched from Bacchus Marsh, Victoria. Not for human or veterinary use.</description>
+    <description>Zyrex supplies high purity 500mg vials for laboratory use only. Independently run and dispatched from Bacchus Marsh, Victoria. Not for human or veterinary use.</description>
     <item>
-      <g:id>ZB-NAD500-01</g:id>
-      <title>NAD+ 500mg Single Vial</title>
-      <link>https://zyrex-bio.netlify.app/product/nad-plus-500mg-single-vial/</link>
-      <description>1 × 500mg NAD+ supplied as a lyophilised powder in sealed glass vials at 99% purity. For laboratory research use only. Not for human or veterinary use, not a therapeutic good, and not for diagnostic, cosmetic or food purposes.</description>
-      <g:image_link>https://zyrex-bio.netlify.app/products/nad-plus-500mg.webp</g:image_link>
+      <g:id>ZX-500-01</g:id>
+      <title>Zyrex 500mg Single Vial</title>
+      <link>https://zyrex-bio.netlify.app/product/zyrex-500mg-single-vial/</link>
+      <description>1 × 500mg Zyrex 500mg supplied as a lyophilised powder in sealed glass vials at 99% purity. For laboratory use only. Not for human or veterinary use, not a therapeutic good, and not for diagnostic, cosmetic or food purposes.</description>
+      <g:image_link>https://zyrex-bio.netlify.app/products/zyrex-500mg.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>89.00 AUD</g:price>
       <g:condition>new</g:condition>
-      <g:brand>Zyrex Bio</g:brand>
-      <g:mpn>ZB-NAD500-01</g:mpn>
+      <g:brand>Zyrex</g:brand>
+      <g:mpn>ZX-500-01</g:mpn>
       <g:google_product_category>3002</g:google_product_category>
-      <g:product_type>Laboratory Supplies &gt; Research Chemicals &gt; NAD+</g:product_type>
+      <g:product_type>Laboratory Supplies &gt; Reference Materials</g:product_type>
       <g:adult>no</g:adult>
       <g:shipping>
         <g:country>AU</g:country>
@@ -25,18 +25,18 @@
       </g:shipping>
     </item>
     <item>
-      <g:id>ZB-NAD500-03</g:id>
-      <title>NAD+ 500mg 3 Vial Kit</title>
-      <link>https://zyrex-bio.netlify.app/product/nad-plus-500mg-3-vial-kit/</link>
-      <description>3 × 500mg NAD+ supplied as a lyophilised powder in sealed glass vials at 99% purity. For laboratory research use only. Not for human or veterinary use, not a therapeutic good, and not for diagnostic, cosmetic or food purposes.</description>
-      <g:image_link>https://zyrex-bio.netlify.app/products/nad-plus-500mg.webp</g:image_link>
+      <g:id>ZX-500-03</g:id>
+      <title>Zyrex 500mg 3 Vial Kit</title>
+      <link>https://zyrex-bio.netlify.app/product/zyrex-500mg-3-vial-kit/</link>
+      <description>3 × 500mg Zyrex 500mg supplied as a lyophilised powder in sealed glass vials at 99% purity. For laboratory use only. Not for human or veterinary use, not a therapeutic good, and not for diagnostic, cosmetic or food purposes.</description>
+      <g:image_link>https://zyrex-bio.netlify.app/products/zyrex-500mg.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>249.00 AUD</g:price>
       <g:condition>new</g:condition>
-      <g:brand>Zyrex Bio</g:brand>
-      <g:mpn>ZB-NAD500-03</g:mpn>
+      <g:brand>Zyrex</g:brand>
+      <g:mpn>ZX-500-03</g:mpn>
       <g:google_product_category>3002</g:google_product_category>
-      <g:product_type>Laboratory Supplies &gt; Research Chemicals &gt; NAD+</g:product_type>
+      <g:product_type>Laboratory Supplies &gt; Reference Materials</g:product_type>
       <g:adult>no</g:adult>
       <g:shipping>
         <g:country>AU</g:country>
@@ -45,18 +45,18 @@
       </g:shipping>
     </item>
     <item>
-      <g:id>ZB-NAD500-05</g:id>
-      <title>NAD+ 500mg 5 Vial Kit</title>
-      <link>https://zyrex-bio.netlify.app/product/nad-plus-500mg-5-vial-kit/</link>
-      <description>5 × 500mg NAD+ supplied as a lyophilised powder in sealed glass vials at 99% purity. For laboratory research use only. Not for human or veterinary use, not a therapeutic good, and not for diagnostic, cosmetic or food purposes.</description>
-      <g:image_link>https://zyrex-bio.netlify.app/products/nad-plus-500mg.webp</g:image_link>
+      <g:id>ZX-500-05</g:id>
+      <title>Zyrex 500mg 5 Vial Kit</title>
+      <link>https://zyrex-bio.netlify.app/product/zyrex-500mg-5-vial-kit/</link>
+      <description>5 × 500mg Zyrex 500mg supplied as a lyophilised powder in sealed glass vials at 99% purity. For laboratory use only. Not for human or veterinary use, not a therapeutic good, and not for diagnostic, cosmetic or food purposes.</description>
+      <g:image_link>https://zyrex-bio.netlify.app/products/zyrex-500mg.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>399.00 AUD</g:price>
       <g:condition>new</g:condition>
-      <g:brand>Zyrex Bio</g:brand>
-      <g:mpn>ZB-NAD500-05</g:mpn>
+      <g:brand>Zyrex</g:brand>
+      <g:mpn>ZX-500-05</g:mpn>
       <g:google_product_category>3002</g:google_product_category>
-      <g:product_type>Laboratory Supplies &gt; Research Chemicals &gt; NAD+</g:product_type>
+      <g:product_type>Laboratory Supplies &gt; Reference Materials</g:product_type>
       <g:adult>no</g:adult>
       <g:shipping>
         <g:country>AU</g:country>
@@ -65,18 +65,18 @@
       </g:shipping>
     </item>
     <item>
-      <g:id>ZB-NAD500-10</g:id>
-      <title>NAD+ 500mg 10 Vial Case</title>
-      <link>https://zyrex-bio.netlify.app/product/nad-plus-500mg-10-vial-case/</link>
-      <description>10 × 500mg NAD+ supplied as a lyophilised powder in sealed glass vials at 99% purity. For laboratory research use only. Not for human or veterinary use, not a therapeutic good, and not for diagnostic, cosmetic or food purposes.</description>
-      <g:image_link>https://zyrex-bio.netlify.app/products/nad-plus-500mg.webp</g:image_link>
+      <g:id>ZX-500-10</g:id>
+      <title>Zyrex 500mg 10 Vial Case</title>
+      <link>https://zyrex-bio.netlify.app/product/zyrex-500mg-10-vial-case/</link>
+      <description>10 × 500mg Zyrex 500mg supplied as a lyophilised powder in sealed glass vials at 99% purity. For laboratory use only. Not for human or veterinary use, not a therapeutic good, and not for diagnostic, cosmetic or food purposes.</description>
+      <g:image_link>https://zyrex-bio.netlify.app/products/zyrex-500mg.webp</g:image_link>
       <g:availability>in_stock</g:availability>
       <g:price>749.00 AUD</g:price>
       <g:condition>new</g:condition>
-      <g:brand>Zyrex Bio</g:brand>
-      <g:mpn>ZB-NAD500-10</g:mpn>
+      <g:brand>Zyrex</g:brand>
+      <g:mpn>ZX-500-10</g:mpn>
       <g:google_product_category>3002</g:google_product_category>
-      <g:product_type>Laboratory Supplies &gt; Research Chemicals &gt; NAD+</g:product_type>
+      <g:product_type>Laboratory Supplies &gt; Reference Materials</g:product_type>
       <g:adult>no</g:adult>
       <g:shipping>
         <g:country>AU</g:country>

@@ -91,7 +91,7 @@ export function CartDrawer() {
                   </span>
                   <p className="font-display text-lg font-extrabold">Nothing here yet</p>
                   <p className="max-w-[24ch] text-sm text-slate">
-                    Add a NAD+ vial or kit and it will show up right here.
+                    Add a Zyrex 500mg vial or kit and it will show up right here.
                   </p>
                   <ButtonLink href="/shop" size="sm" onClick={closeDrawer}>
                     Browse the range

@@ -7,7 +7,7 @@ import { pageMetadata } from '@/lib/seo'
 export const metadata: Metadata = pageMetadata({
   title: 'Your cart',
   description:
-    'Review the NAD+ research vials and kits in your Zyrex Bio cart before checking out.',
+    'Review the lab vials and kits in your Zyrex cart before checking out.',
   path: '/cart',
   noIndex: true,
 })

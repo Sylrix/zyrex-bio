@@ -3,7 +3,7 @@ import { Reveal } from '@/components/motion/reveal'
 
 const STATS = [
   { to: 99, suffix: '%', label: 'Minimum purity, HPLC verified' },
-  { to: 500, suffix: 'mg', label: 'NAD+ per sealed vial' },
+  { to: 500, suffix: 'mg', label: 'Fill weight per sealed vial' },
   { to: 48, suffix: 'h', label: 'Typical pack and post window' },
   { to: 1, suffix: '', label: 'Person behind every order', prefix: '' },
 ] as const

@@ -8,7 +8,7 @@ import { formatPrice } from '@/lib/utils'
 export const metadata: Metadata = pageMetadata({
   title: 'Terms of sale',
   description:
-    'The terms you agree to when you order from Zyrex Bio, ordering, pricing, payment, delivery, research use conditions and liability.',
+    'The terms you agree to when you order from Zyrex, ordering, pricing, payment, delivery, laboratory use conditions and liability.',
   path: '/terms',
 })
 
@@ -31,14 +31,14 @@ export default function TermsPage() {
         {
           heading: 'Placing an order',
           body: [
-            'Submitting the checkout form is an offer to buy, not a completed sale. A contract is formed only once the order is accepted and an invoice is issued. Orders may be declined for any lawful reason, including where the research use conditions cannot be met.',
+            'Submitting the checkout form is an offer to buy, not a completed sale. A contract is formed only once the order is accepted and an invoice is issued. Orders may be declined for any lawful reason, including where the laboratory use conditions cannot be met.',
             'You must be 18 or over to order, and the details you provide must be accurate and your own.',
           ],
         },
         {
-          heading: 'Research use conditions',
+          heading: 'Laboratory use conditions',
           body: [
-            `${RUO_NOTICE} By ordering you accept the research use policy in full and confirm the material will be used only for laboratory research.`,
+            `${RUO_NOTICE} By ordering you accept the laboratory use policy in full and confirm the material will be used only in a laboratory setting.`,
             'Breaching that condition ends the agreement immediately and no refund is owed for material already supplied.',
           ],
         },
@@ -67,7 +67,7 @@ export default function TermsPage() {
           heading: 'Limitation of liability',
           body: [
             'To the extent permitted by law, and other than for the consumer guarantees that cannot be excluded, liability for any claim connected with an order is limited to replacing the goods or refunding what was paid for them.',
-            'No liability is accepted for loss arising from use of the material outside the research use conditions, or for indirect or consequential loss.',
+            'No liability is accepted for loss arising from use of the material outside the laboratory use conditions, or for indirect or consequential loss.',
           ],
         },
         {

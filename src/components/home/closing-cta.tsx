@@ -7,7 +7,7 @@ import { Reveal } from '@/components/motion/reveal'
 import { ButtonLink } from '@/components/ui/button'
 import { RUO_SHORT, site } from '@/lib/site'
 
-const TICKER = ['NAD+ 500MG', '99% PURITY', 'RESEARCH USE ONLY', 'SHIPS AU WIDE', 'BATCH TESTED']
+const TICKER = ['Zyrex 500mg 500MG', '99% PURITY', 'LABORATORY USE ONLY', 'SHIPS AU WIDE', 'BATCH TESTED']
 
 export function ClosingCta() {
   return (
@@ -35,7 +35,7 @@ export function ClosingCta() {
 
               <div className="flex flex-wrap items-center justify-center gap-3">
                 <ButtonLink href="/shop" size="lg">
-                  Shop NAD+ <ArrowRight className="h-4 w-4" strokeWidth={3} />
+                  Shop Zyrex <ArrowRight className="h-4 w-4" strokeWidth={3} />
                 </ButtonLink>
                 <ButtonLink href="/contact" size="lg" variant="outline">
                   Ask a question first

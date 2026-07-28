@@ -10,18 +10,18 @@ import { breadcrumbJsonLd, pageMetadata } from '@/lib/seo'
 import { RUO_NOTICE, fullAddress, site } from '@/lib/site'
 
 export const metadata: Metadata = pageMetadata({
-  title: 'About Zyrex Bio',
+  title: 'About Zyrex',
   description:
-    'Zyrex Bio is a one person operation in Bacchus Marsh, Victoria supplying NAD+ research compounds at 99% purity. Not a company. One sole trader who packs every order.',
+    'Zyrex is a one person operation in Bacchus Marsh, Victoria supplying Zyrex 500mg laboratory materials at 99% purity. Not a company. One sole trader who packs every order.',
   path: '/about',
-  keywords: ['about Zyrex Bio', 'independent research compound supplier Australia'],
+  keywords: ['about Zyrex', 'independent laboratory material supplier Australia'],
 })
 
 const CREDS = [
   {
     icon: UserRound,
     title: 'A sole trader, not a company',
-    body: `Zyrex Bio is ${site.ownership}. There is no board, no team page and no "our labs". There is one person, and that person is accountable for everything on this site.`,
+    body: `Zyrex is ${site.ownership}. There is no board, no team page and no "our labs". There is one person, and that person is accountable for everything on this site.`,
   },
   {
     icon: Snowflake,
@@ -52,11 +52,11 @@ export default function AboutPage() {
         eyebrow="Who is behind this"
         title={
           <>
-            One person, <span className="text-gradient">one compound,</span> done
+            One person, <span className="text-gradient">one material,</span> done
             properly.
           </>
         }
-        description={`Zyrex Bio supplies NAD+ research material from ${site.address.city}, ${site.address.state}. It is ${site.ownership}, not a company, not a laboratory group, and not a reseller network.`}
+        description={`Zyrex supplies Zyrex 500mg laboratory material from ${site.address.city}, ${site.address.state}. It is ${site.ownership}, not a company, not a laboratory group, and not a reseller network.`}
         crumbs={crumbs}
       />
 
@@ -67,13 +67,13 @@ export default function AboutPage() {
               Why it exists
             </h2>
             <p className="text-[1rem] leading-relaxed text-slate">
-              Sourcing a research compound in Australia usually means one of two
+              Sourcing a laboratory material in Australia usually means one of two
               things: an overseas listing with no documentation and a six-week
               wait, or a distributor that will not talk to you unless you are
               buying by the kilo.
             </p>
             <p className="text-[1rem] leading-relaxed text-slate">
-              Zyrex Bio sits in between. One compound, sourced from a supplier
+              Zyrex sits in between. One material, sourced from a supplier
               whose analysis actually holds up, tested before it is listed, held
               cold, and posted from inside the country in a couple of days. You
               can buy a single vial to see whether the material suits your work,
@@ -113,8 +113,8 @@ export default function AboutPage() {
               className="absolute inset-12 animate-[var(--animate-spin-slow)] rounded-full border-2 border-dashed border-blue/25"
             />
             <Image
-              src="/products/nad-plus-500mg.webp"
-              alt="Zyrex Bio NAD+ 500mg research vial"
+              src="/products/zyrex-500mg.webp"
+              alt="Zyrex 500mg vial"
               fill
               sizes="(min-width: 1024px) 32rem, 90vw"
               className="relative animate-[var(--animate-bob)] object-contain p-10"
@@ -159,7 +159,7 @@ export default function AboutPage() {
             </h2>
             <p className="mt-3 text-[0.92rem] leading-relaxed">{RUO_NOTICE}</p>
             <p className="mt-3 text-[0.92rem] leading-relaxed">
-              No claim is made about what this compound does in a human or an
+              No claim is made about what this material does in a human or an
               animal, and no dosing or protocol information is provided. If that
               is what you are looking for, this is not the right supplier.
             </p>

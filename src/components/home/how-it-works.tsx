@@ -9,8 +9,8 @@ const STEPS = [
   },
   {
     number: '02',
-    title: 'Confirm research use',
-    body: 'A single tick at checkout confirming you are 18+ and buying the material for laboratory research. No account needed.',
+    title: 'Confirm laboratory use',
+    body: 'A single tick at checkout confirming you are 18+ and buying the material for laboratory use. No account needed.',
   },
   {
     number: '03',

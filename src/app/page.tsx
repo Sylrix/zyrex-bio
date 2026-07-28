@@ -16,15 +16,15 @@ import { faqJsonLd, itemListJsonLd, pageMetadata } from '@/lib/seo'
 import { RUO_NOTICE, site } from '@/lib/site'
 
 export const metadata: Metadata = pageMetadata({
-  title: `${site.name} | NAD+ Research Compounds, 99% Purity | Australia`,
+  title: `${site.name} | High Purity Lab Vials, 99% Purity | Australia`,
   description:
-    'Buy NAD+ 500mg research vials at 99% purity, packed and posted Australia wide by an independent sole trader in Bacchus Marsh, Victoria. For laboratory research use only, not for human consumption.',
+    'Buy Zyrex 500mg vials at 99% purity, packed and posted Australia wide by an independent sole trader in Bacchus Marsh, Victoria. For laboratory use only, not for human consumption.',
   path: '/',
   keywords: [
-    'NAD+ research vial',
-    'NAD+ 500mg Australia',
-    'research use only NAD+',
-    'lab research compounds Australia',
+    'lab vial',
+    'Zyrex 500mg Australia',
+    'laboratory use only Zyrex 500mg',
+    'lab laboratory materials Australia',
   ],
 })
 
@@ -41,7 +41,7 @@ export default function HomePage() {
       <Hero />
       <StatsStrip />
       <FeaturedGrid />
-      <ResearchBand />
+      <ComplianceBand />
       <WhyZyrex />
       <HowItWorks />
       <HomeFaq />
@@ -51,7 +51,7 @@ export default function HomePage() {
 }
 
 /** Compliance is not a footnote here, it gets its own band, mid-page. */
-function ResearchBand() {
+function ComplianceBand() {
   return (
     <section className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
       <Reveal direction="scale">
@@ -65,12 +65,12 @@ function ResearchBand() {
             </h2>
             <p className="mt-1.5 text-[0.9rem] leading-relaxed text-ink/80">
               {RUO_NOTICE} By ordering you confirm you are 18 or over and that
-              the material is for laboratory research.{' '}
+              the material is for laboratory use.{' '}
               <Link
-                href="/research-use"
+                href="/lab-use"
                 className="font-semibold underline underline-offset-4"
               >
-                Read the full research use policy
+                Read the full laboratory use policy
               </Link>
               .
             </p>

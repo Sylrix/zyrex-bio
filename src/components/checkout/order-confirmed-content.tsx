@@ -49,7 +49,7 @@ export function OrderConfirmedContent() {
           new order below.
         </p>
         <ButtonLink href="/shop" size="lg">
-          Browse NAD+
+          Browse Zyrex 500mg
         </ButtonLink>
       </div>
     )

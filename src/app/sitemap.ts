@@ -16,7 +16,7 @@ const STATIC_ROUTES: ReadonlyArray<{
   { path: '/', priority: 1, changeFrequency: 'weekly' },
   { path: '/shop', priority: 0.9, changeFrequency: 'weekly' },
   { path: '/about', priority: 0.6, changeFrequency: 'monthly' },
-  { path: '/research-use', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/lab-use', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/faq', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/contact', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/shipping-policy', priority: 0.4, changeFrequency: 'yearly' },

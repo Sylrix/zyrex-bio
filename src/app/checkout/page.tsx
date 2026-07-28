@@ -7,7 +7,7 @@ import { pageMetadata } from '@/lib/seo'
 export const metadata: Metadata = pageMetadata({
   title: 'Checkout',
   description:
-    'Complete your Zyrex Bio order. Choose card, bank transfer, PayID, Apple Pay or Google Pay, then settle the invoice through a secure payment link.',
+    'Complete your Zyrex order. Choose card, bank transfer, PayID, Apple Pay or Google Pay, then settle the invoice through a secure payment link.',
   path: '/checkout',
   noIndex: true,
 })

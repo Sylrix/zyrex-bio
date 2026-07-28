@@ -10,7 +10,7 @@ export function Logo({ className }: { readonly className?: string }) {
   return (
     <Link
       href="/"
-      aria-label="Zyrex Bio, home"
+      aria-label="Zyrex, home"
       className={cn('group inline-flex items-center gap-2.5', className)}
     >
       <span className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl border-2 border-ink bg-ink transition-transform duration-300 group-hover:-rotate-6">
@@ -33,7 +33,7 @@ export function Logo({ className }: { readonly className?: string }) {
         <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/35 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
       </span>
       <span className="font-display text-[1.35rem] leading-none font-extrabold tracking-tight">
-        ZYREX<span className="text-blue">BIO</span>
+        ZYRE<span className="text-blue">X</span>
       </span>
     </Link>
   )

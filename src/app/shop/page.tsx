@@ -9,14 +9,14 @@ import { RUO_NOTICE, site } from '@/lib/site'
 import { formatPrice } from '@/lib/utils'
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Shop NAD+ Research Vials & Kits',
+  title: 'Shop Zyrex Vials & Kits',
   description:
-    'Every NAD+ 500mg research pack Zyrex Bio stocks, single vials, 3, 5 and 10 vial kits at 99% purity, posted Australia wide. Research use only.',
+    'Every Zyrex 500mg pack, single vials and 3, 5 and 10 vial kits at 99% purity, posted Australia wide. Laboratory use only.',
   path: '/shop',
   keywords: [
-    'buy NAD+ vial Australia',
-    'NAD+ 500mg kit',
-    'research NAD+ price',
+    'buy Zyrex 500mg vial Australia',
+    'Zyrex 500mg kit',
+    'Zyrex 500mg price',
   ],
 })
 
@@ -40,7 +40,7 @@ export default function ShopPage() {
         eyebrow="The catalogue"
         title={
           <>
-            All of it is <span className="text-gradient">NAD+ 500mg.</span>
+            All of it is <span className="text-gradient">Zyrex 500mg.</span>
           </>
         }
         description={`Four pack sizes of the same batch tested material. Free shipping over ${formatPrice(site.shipping.freeThreshold)}, packed within ${site.shipping.dispatchWindow}.`}
@@ -61,7 +61,7 @@ export default function ShopPage() {
 
         <Reveal>
           <p className="mt-10 rounded-3xl border-2 border-ink bg-white p-6 text-[0.86rem] leading-relaxed text-slate">
-            <strong className="font-display text-ink">Research use only. </strong>
+            <strong className="font-display text-ink">Laboratory use only. </strong>
             {RUO_NOTICE} Prices are in {site.currency} and orders are accepted
             for delivery to Australian addresses only.
           </p>

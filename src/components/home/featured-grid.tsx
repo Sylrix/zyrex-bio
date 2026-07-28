@@ -16,7 +16,7 @@ export function FeaturedGrid() {
                 The range
               </span>
               <h2 className="mt-3 text-[clamp(2rem,4.6vw,3.1rem)]">
-                One compound.{' '}
+                One material.{' '}
                 <span className="text-gradient">Four ways to buy it.</span>
               </h2>
               <p className="mt-4 text-[1.02rem] leading-relaxed text-slate">

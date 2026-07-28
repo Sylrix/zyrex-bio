@@ -24,7 +24,7 @@ const REASONS = [
   {
     icon: UserRound,
     title: 'One person, start to finish',
-    body: 'Zyrex Bio is run by a single sole trader. The person who answers your email is the person who packs the box, there is no support tier to escalate through.',
+    body: 'Zyrex is run by a single sole trader. The person who answers your email is the person who packs the box, there is no support tier to escalate through.',
     tone: 'bg-lime/40',
   },
   {

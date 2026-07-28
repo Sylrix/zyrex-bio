@@ -29,11 +29,11 @@ export function CartPageContent() {
         </span>
         <h2 className="font-display text-2xl font-extrabold">Your cart is empty</h2>
         <p className="text-sm leading-relaxed text-slate">
-          Four pack sizes of NAD+ 500mg are waiting. Add one and it will show up
+          Four pack sizes of Zyrex 500mg are waiting. Add one and it will show up
           here.
         </p>
         <ButtonLink href="/shop" size="lg">
-          Browse NAD+
+          Browse Zyrex 500mg
         </ButtonLink>
       </div>
     )

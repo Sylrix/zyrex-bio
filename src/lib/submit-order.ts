@@ -75,7 +75,7 @@ function orderSummaryText(order: OrderInput, totals: CartTotals, reference: stri
     '  Australia',
     '',
     `Payment preference: ${paymentMethodLabel(order.paymentPreference)}`,
-    `Research-use declaration accepted: yes`,
+    `Laboratory use declaration accepted: yes`,
     `Terms accepted: yes`,
     order.notes ? `\nNotes: ${order.notes}` : '',
     '',
@@ -109,7 +109,7 @@ export async function submitOrder(
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({
         access_key: ACCESS_KEY,
-        subject: `Zyrex Bio order ${reference}, ${formatPrice(totals.total)}`,
+        subject: `Zyrex order ${reference}, ${formatPrice(totals.total)}`,
         from_name: `${site.name} storefront`,
         replyto: order.email,
         reference,

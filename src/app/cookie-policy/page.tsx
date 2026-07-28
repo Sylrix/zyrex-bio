@@ -7,7 +7,7 @@ import { site } from '@/lib/site'
 export const metadata: Metadata = pageMetadata({
   title: 'Cookie policy',
   description:
-    'Zyrex Bio sets no advertising or tracking cookies. Here is exactly what is stored in your browser and how to clear it.',
+    'Zyrex sets no advertising or tracking cookies. Here is exactly what is stored in your browser and how to clear it.',
   path: '/cookie-policy',
 })
 
@@ -32,8 +32,8 @@ export default function CookiePolicyPage() {
             'Two pieces of browser storage make the shop work. Both stay on your device and are readable only by this site:',
           ],
           list: [
-            'zyrexbio.cart.v1, local storage holding the items in your cart so it survives a refresh. Cleared when you empty the cart.',
-            'zyrexbio.lastOrder.v1, session storage holding your order reference so the confirmation page can display it. Cleared when you close the tab.',
+            'zyrex.cart.v1, local storage holding the items in your cart so it survives a refresh. Cleared when you empty the cart.',
+            'zyrex.lastOrder.v1, session storage holding your order reference so the confirmation page can display it. Cleared when you close the tab.',
           ],
         },
         {

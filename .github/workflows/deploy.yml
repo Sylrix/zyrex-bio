@@ -34,10 +34,10 @@ jobs:
           # asset and link needs that prefix. Moving to the custom domain
           # (www.zyrexbioau.com)? Set this back to '' and add a `public/CNAME`
           # file containing the domain — see the README.
-          NEXT_PUBLIC_BASE_PATH: '/zyrex-bio'
+          NEXT_PUBLIC_BASE_PATH: '/zyrex'
           # Must match where the site is served, or every canonical, JSON-LD
           # @id, sitemap entry and feed link points somewhere that 404s.
-          NEXT_PUBLIC_SITE_URL: 'https://sylrix.github.io/zyrex-bio'
+          NEXT_PUBLIC_SITE_URL: 'https://sylrix.github.io/zyrex'
           NEXT_PUBLIC_WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
         run: npm run build
 

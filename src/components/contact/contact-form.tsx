@@ -78,7 +78,7 @@ export function ContactForm() {
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           access_key: ACCESS_KEY,
-          subject: `Zyrex Bio enquiry, ${parsed.data.subject}`,
+          subject: `Zyrex enquiry, ${parsed.data.subject}`,
           from_name: `${site.name} contact form`,
           replyto: parsed.data.email,
           name: parsed.data.name,

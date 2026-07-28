@@ -192,10 +192,10 @@ export function CheckoutForm() {
           There is nothing to check out
         </h2>
         <p className="text-sm leading-relaxed text-slate">
-          Add a NAD+ vial or kit to your cart and this page will fill itself in.
+          Add a Zyrex 500mg vial or kit to your cart and this page will fill itself in.
         </p>
         <ButtonLink href="/shop" size="lg">
-          Browse NAD+
+          Browse Zyrex 500mg
         </ButtonLink>
       </div>
     )
@@ -541,9 +541,9 @@ function ReviewStep({
         error={errors.researchDeclaration}
         onChange={(checked) => update('researchDeclaration', checked)}
       >
-        I am 18 or over and I am buying this material for laboratory research
-        use only. I will not administer it to a human or an animal, and I
-        understand it is not a medicine, supplement or therapeutic good.
+        I am 18 or over and I am buying this material for laboratory use only.
+        I will not administer it to a human or an animal, and I understand it
+        is not a medicine, supplement or therapeutic good.
       </CheckboxField>
 
       <CheckboxField

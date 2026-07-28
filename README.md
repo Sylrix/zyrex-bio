@@ -1,6 +1,6 @@
-# Zyrex Bio
+# Zyrex
 
-NAD+ research-compound storefront for **www.zyrexbioau.com**. Next.js 16 (App
+laboratory-material storefront for **www.zyrexbioau.com**. Next.js 16 (App
 Router) + React 19 + Tailwind v4, exported as static HTML and served from
 GitHub Pages.
 
@@ -43,18 +43,18 @@ push to `main`. In the repo, set **Settings → Pages → Source** to *GitHub
 Actions*, and add `WEB3FORMS_KEY` under **Settings → Secrets and variables →
 Actions**.
 
-**Live now at https://sylrix.github.io/zyrex-bio/** — the workflow sets
-`NEXT_PUBLIC_BASE_PATH=/zyrex-bio` and `NEXT_PUBLIC_SITE_URL` to match, so
-assets resolve under the subpath and canonicals point at the real URL.
+**Live at https://sylrix.github.io/zyrex/** (GitHub Pages) and on Netlify. The
+Pages workflow sets `NEXT_PUBLIC_BASE_PATH=/zyrex` and `NEXT_PUBLIC_SITE_URL` to
+match, so assets resolve under the subpath and canonicals point at the real URL.
+Netlify serves from the domain root and sets its own URL in `netlify.toml`.
 
-**Switching to www.zyrexbioau.com** once DNS points at GitHub Pages — three
-changes, all in this repo:
+**Attaching a custom Zyrex domain** once you own one and DNS points at the host:
 
-1. In `.github/workflows/deploy.yml`, set `NEXT_PUBLIC_BASE_PATH: ''` and
-   `NEXT_PUBLIC_SITE_URL: 'https://www.zyrexbioau.com'`
-2. Add `public/CNAME` containing `www.zyrexbioau.com`
-3. Point the domain's DNS at GitHub Pages (a `CNAME` record for `www` →
-   `sylrix.github.io`), then set the custom domain under **Settings → Pages**
+1. On Netlify, set the domain in the UI and update `NEXT_PUBLIC_SITE_URL` in
+   `netlify.toml` to it. On GitHub Pages, set `NEXT_PUBLIC_BASE_PATH: ''` and
+   `NEXT_PUBLIC_SITE_URL` to the domain in `deploy.yml`, and add `public/CNAME`.
+2. Whichever host you keep as primary, update the feed URL, return-policy URL
+   and site verification inside Merchant Center to the new address.
 
 Those two env vars must always agree with where the site is served. If they
 disagree, either every asset 404s or every canonical points at a dead URL.
@@ -65,7 +65,7 @@ There is no payment server, because there is no server at all.
 
 1. The customer fills in delivery details, picks a **payment preference** —
    card, bank transfer / PayID, Apple Pay or Google Pay — and ticks the
-   research-use and terms declarations.
+   lab-use and terms declarations.
 2. The order is emailed to you via Web3Forms and the customer gets a reference
    (`ZB-YYMMDD-XXXX`).
 3. You send an invoice with a secure payment link for the method they chose.
@@ -89,18 +89,18 @@ silently lost.
 - `sitemap.xml` and `robots.txt` generated at build; cart, checkout and
   order-confirmed are `noindex` **and** disallowed
 - `product-feed.xml` — a Google Merchant Center RSS feed, regenerated on every
-  build, with the research-use notice inside every description
+  build, with the lab-use notice inside every description
 - Semantic headings, real breadcrumbs on every interior page, descriptive alt
   text
 
 ## Compliance
 
-Everything is sold as **research use only**. The notice lives in one constant
+Everything is sold as **laboratory use only**. The notice lives in one constant
 (`RUO_NOTICE` in `src/lib/site.ts`) and appears on the home page, every product
-page, the cart, the checkout, the feed and the footer. `/research-use` is the
+page, the cart, the checkout, the feed and the footer. `/lab-use` is the
 full policy, and the checkout will not submit without an explicit declaration.
 
-Zyrex Bio is written throughout as **a sole trader — one individual, not a
+Zyrex is written throughout as **a sole trader — one individual, not a
 company**. There is no "we", no team page, no "our labs", and nothing implying
 an incorporated entity. Keep it that way when editing copy.
 

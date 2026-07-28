@@ -2,7 +2,7 @@ import { getProductBySlug, type Product } from '@/lib/products'
 import { site } from '@/lib/site'
 
 export const MAX_QTY_PER_LINE = 10
-export const CART_STORAGE_KEY = 'zyrexbio.cart.v1'
+export const CART_STORAGE_KEY = 'zyrex.cart.v1'
 
 export interface CartLine {
   readonly slug: string

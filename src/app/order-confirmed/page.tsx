@@ -6,7 +6,7 @@ import { pageMetadata } from '@/lib/seo'
 
 export const metadata: Metadata = pageMetadata({
   title: 'Order received',
-  description: 'Your Zyrex Bio order reference and what happens next.',
+  description: 'Your Zyrex order reference and what happens next.',
   path: '/order-confirmed',
   noIndex: true,
 })

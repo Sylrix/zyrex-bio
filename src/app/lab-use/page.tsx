@@ -5,26 +5,26 @@ import { pageMetadata } from '@/lib/seo'
 import { RUO_NOTICE, site } from '@/lib/site'
 
 export const metadata: Metadata = pageMetadata({
-  title: 'Research use only policy',
+  title: 'Laboratory use policy',
   description:
-    'Everything Zyrex Bio supplies is a laboratory research material. Read the conditions of sale, who may order, and what these compounds must never be used for.',
-  path: '/research-use',
-  keywords: ['research use only', 'NAD+ research material conditions'],
+    'Everything Zyrex supplies is a laboratory material. Read the conditions of sale, who may order, and what these vials must never be used for.',
+  path: '/lab-use',
+  keywords: ['laboratory use only', 'laboratory vial conditions Australia'],
 })
 
-export default function ResearchUsePage() {
+export default function LabUsePage() {
   return (
     <LegalPage
       eyebrow="The important one"
-      title="Research use only policy"
+      title="Laboratory use policy"
       intro="This is the condition every order is sold under. Please read it in full before you buy."
       updated="24 July 2026"
-      path="/research-use"
+      path="/lab-use"
       sections={[
         {
           heading: 'What these products are',
           body: [
-            `Everything listed on this site is a research material supplied to qualified individuals for use in a laboratory setting. ${RUO_NOTICE}`,
+            `Everything listed on this site is a laboratory material supplied to qualified individuals for use in a laboratory setting. ${RUO_NOTICE}`,
             'The vials contain a lyophilised powder intended for in-vitro and analytical work. They are not sterile injectables, they are not compounded for administration, and they are not prepared, labelled or supplied as anything a person or an animal should receive.',
           ],
         },
@@ -44,14 +44,14 @@ export default function ResearchUsePage() {
         {
           heading: 'No claims are made',
           body: [
-            'Zyrex Bio makes no claim, express or implied, about any effect these materials may have on the body of a human or an animal. No dosing information, protocol, reconstitution guidance for administration, or suggested use is provided, and none will be provided on request.',
-            'Any statement you find elsewhere describing a use for this compound in people is not endorsed by Zyrex Bio and forms no part of what is being sold here.',
+            'Zyrex makes no claim, express or implied, about any effect these materials may have on the body of a human or an animal. No dosing information, protocol, reconstitution guidance for administration, or suggested use is provided, and none will be provided on request.',
+            'Any statement you find elsewhere describing a use for this material in people is not endorsed by Zyrex and forms no part of what is being sold here.',
           ],
         },
         {
           heading: 'Who may order',
           body: [
-            'By placing an order you confirm that you are 18 years of age or older, that you are ordering the material for laboratory research use, and that you are competent to handle research chemicals safely in an appropriate setting.',
+            'By placing an order you confirm that you are 18 years of age or older, that you are ordering the material for laboratory use, and that you are competent to handle laboratory materials safely in an appropriate setting.',
             'You also confirm that you will not administer the material to a human or an animal, will not resell it for that purpose, and will comply with every law that applies to you regarding possession, handling, storage and disposal.',
           ],
         },
@@ -65,7 +65,7 @@ export default function ResearchUsePage() {
         {
           heading: 'Handling and storage',
           body: [
-            'Store sealed vials at 2 to 8°C, protected from light, and keep them out of reach of children and anyone not involved in the research. Handle in a controlled setting with appropriate protective equipment, and dispose of unused material and packaging in line with the rules that apply to your facility and your local authority.',
+            'Store sealed vials at 2 to 8°C, protected from light, and keep them out of reach of children and anyone not involved in the work. Handle in a controlled setting with appropriate protective equipment, and dispose of unused material and packaging in line with the rules that apply to your facility and your local authority.',
           ],
         },
         {

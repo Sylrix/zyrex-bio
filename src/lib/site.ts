@@ -1,38 +1,39 @@
 /**
  * Single source of truth for everything that identifies the business.
  *
- * Zyrex Bio is run by one person as a sole trader. Nothing on this site may
+ * Zyrex is run by one person as a sole trader. Nothing on this site may
  * describe it as a company, corporation, laboratory group, "we the team" or
  * anything else that implies an incorporated entity or staff. That wording is
  * both untrue and the exact thing that gets an individual merchant account
  * pulled. Keep the voice singular and personal.
  *
- * Two house rules for any copy added here or anywhere else on the site:
- *  1. No dash punctuation in customer facing text. Use a comma, a full stop or
- *     the word "to" for ranges.
+ * House rules for any customer facing copy added here or anywhere else:
+ *  1. No dash punctuation. Use a comma, a full stop or the word "to".
  *  2. Do not describe what the checkout does not collect. State how payment is
  *     completed and stop there.
+ *  3. Do not name the substance, and do not use category jargon for it. It is
+ *     a high purity vial supplied for laboratory use. The "not for human or
+ *     veterinary use" safety line always stays.
  */
 
 export const site = {
-  name: 'Zyrex Bio',
-  legalName: 'Zyrex Bio',
+  name: 'Zyrex',
+  legalName: 'Zyrex',
   /** How the operator is described in copy. Sole trader, never a company. */
   ownership: 'independently owned and run by a single person (sole trader)',
-  tagline: 'NAD+ research compounds, supplied for laboratory use only.',
+  tagline: 'High purity vials, supplied for laboratory use only.',
   description:
-    'Zyrex Bio supplies NAD+ research compounds at 99% purity for laboratory and research use only. Independently run and dispatched from Bacchus Marsh, Victoria. Not for human or veterinary use.',
+    'Zyrex supplies high purity 500mg vials for laboratory use only. Independently run and dispatched from Bacchus Marsh, Victoria. Not for human or veterinary use.',
   /**
    * Where the site actually answers. Canonicals, JSON-LD @ids, the sitemap and
    * the product feed are all built from this, so it has to match reality. A
    * canonical pointing at a domain that does not resolve yet is worse than no
    * canonical at all. Set NEXT_PUBLIC_SITE_URL at build time; the fallback is
-   * the eventual custom domain.
+   * the current live URL.
    */
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.zyrexbioau.com').replace(
-    /\/$/,
-    ''
-  ),
+  url: (
+    process.env.NEXT_PUBLIC_SITE_URL ?? 'https://zyrex-bio.netlify.app'
+  ).replace(/\/$/, ''),
   locale: 'en_AU',
   country: 'AU',
   currency: 'AUD',
@@ -60,7 +61,7 @@ export const site = {
   },
 
   /** Registered sole trader name shown on invoices and policies. */
-  proprietor: 'the owner of Zyrex Bio',
+  proprietor: 'the owner of Zyrex',
 
   shipping: {
     freeThreshold: 250,
@@ -91,10 +92,12 @@ export const fullAddress = [
 export const shortAddress = `${site.address.city} ${site.address.state}, ${site.address.country}`
 
 /**
- * The compliance line that has to appear anywhere a product is shown.
- * Kept here so it can never drift between pages.
+ * The safety line that has to appear anywhere a product is shown. Kept here so
+ * it can never drift between pages. The substance name and category jargon are
+ * deliberately absent; "not for human or veterinary use" is deliberately
+ * present and must stay.
  */
 export const RUO_NOTICE =
-  'For laboratory research use only. Not for human or veterinary use, not a therapeutic good, and not for diagnostic, cosmetic or food purposes.'
+  'For laboratory use only. Not for human or veterinary use, not a therapeutic good, and not for diagnostic, cosmetic or food purposes.'
 
-export const RUO_SHORT = 'Research use only. Not for human consumption.'
+export const RUO_SHORT = 'Laboratory use only. Not for human consumption.'

@@ -28,7 +28,7 @@ export function pageMetadata({
   title,
   description,
   path,
-  image = '/products/nad-plus-500mg.webp',
+  image = '/products/zyrex-500mg.webp',
   keywords,
   noIndex,
 }: PageMetaInput): Metadata {
@@ -76,7 +76,7 @@ export function storeJsonLd(): Json {
     '@id': `${site.url}/#store`,
     name: site.name,
     url: absoluteUrl('/'),
-    description: `${site.description} Zyrex Bio is ${site.ownership}.`,
+    description: `${site.description} Zyrex is ${site.ownership}.`,
     email: site.contact.email,
     currenciesAccepted: site.currency,
     paymentAccepted: 'Credit Card, Bank Transfer, PayID, Apple Pay, Google Pay',
@@ -123,13 +123,13 @@ export function productJsonLd(product: Product): Json {
     mpn: product.sku,
     image: [absoluteUrl(product.image).replace(/\/$/, '')],
     brand: { '@type': 'Brand', name: site.name },
-    category: 'Laboratory Research Chemicals',
+    category: 'Laboratory Reference Materials',
     url: absoluteUrl(`/product/${product.slug}`),
     additionalProperty: [
       { '@type': 'PropertyValue', name: 'Purity', value: product.purity },
       { '@type': 'PropertyValue', name: 'Strength', value: product.strength },
       { '@type': 'PropertyValue', name: 'Vials per pack', value: String(product.vials) },
-      { '@type': 'PropertyValue', name: 'Intended use', value: 'Research use only' },
+      { '@type': 'PropertyValue', name: 'Intended use', value: 'Laboratory use only' },
     ],
     offers: {
       '@type': 'Offer',

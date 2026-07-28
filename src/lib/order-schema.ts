@@ -92,7 +92,7 @@ export const orderSchema = z.object({
   /** Research-use declaration. Non-negotiable, hence `literal(true)`. */
   researchDeclaration: z.literal(true, {
     message:
-      'Please confirm the order is for laboratory research use before continuing.',
+      'Please confirm the order is for laboratory use before continuing.',
   }),
   agreeToTerms: z.literal(true, {
     message: 'Please confirm you have read the terms before placing the order.',

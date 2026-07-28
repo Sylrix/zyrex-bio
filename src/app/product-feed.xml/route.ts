@@ -8,8 +8,8 @@ import { priceValue } from '@/lib/utils'
  *
  * `force-static` is what lets a GET route handler survive `output: 'export'`, * the XML is written out at build time and served as a plain file.
  *
- * The research use notice is inside every description on purpose. A shopping
- * feed for research chemicals that omits it is the fastest route to a policy
+ * The laboratory use notice is inside every description on purpose. A shopping
+ * feed for laboratory materials that omits it is the fastest route to a policy
  * suspension.
  *
  * Two things here are deliberate and easy to "tidy" back into bugs:
@@ -40,7 +40,7 @@ export function GET() {
     .map((product) => {
       const url = absoluteUrl(`/product/${product.slug}`)
       const image = absoluteUrl(product.image).replace(/\/$/, '')
-      const description = `${product.vials} × ${product.strength} NAD+ supplied as a lyophilised powder in sealed glass vials at ${product.purity} purity. ${RUO_NOTICE}`
+      const description = `${product.vials} × ${product.strength} Zyrex 500mg supplied as a lyophilised powder in sealed glass vials at ${product.purity} purity. ${RUO_NOTICE}`
 
       return `    <item>
       <g:id>${escapeXml(product.sku)}</g:id>
@@ -54,7 +54,7 @@ export function GET() {
       <g:brand>${escapeXml(site.name)}</g:brand>
       <g:mpn>${escapeXml(product.sku)}</g:mpn>
       <g:google_product_category>${GOOGLE_PRODUCT_CATEGORY}</g:google_product_category>
-      <g:product_type>Laboratory Supplies &gt; Research Chemicals &gt; NAD+</g:product_type>
+      <g:product_type>Laboratory Supplies &gt; Reference Materials</g:product_type>
       <g:adult>no</g:adult>
       <g:shipping>
         <g:country>AU</g:country>
@@ -68,7 +68,7 @@ export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>${escapeXml(site.name)}, NAD+ research compounds</title>
+    <title>${escapeXml(site.name)}, Zyrex 500mg laboratory materials</title>
     <link>${escapeXml(absoluteUrl('/'))}</link>
     <description>${escapeXml(site.description)}</description>
 ${items}

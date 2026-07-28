@@ -7,7 +7,7 @@ import { formatPrice } from '@/lib/utils'
 
 export const metadata: Metadata = pageMetadata({
   title: 'Shipping policy',
-  description: `How Zyrex Bio orders are packed and posted: ${site.shipping.dispatchWindow} dispatch, tracked ${site.shipping.carrier} delivery Australia wide, free over ${formatPrice(site.shipping.freeThreshold)}.`,
+  description: `How Zyrex orders are packed and posted: ${site.shipping.dispatchWindow} dispatch, tracked ${site.shipping.carrier} delivery Australia wide, free over ${formatPrice(site.shipping.freeThreshold)}.`,
   path: '/shipping-policy',
 })
 
@@ -23,7 +23,7 @@ export default function ShippingPolicyPage() {
         {
           heading: 'Where orders ship from',
           body: [
-            `Every order is picked, packed and lodged from ${fullAddress}. There is no third-party warehouse in between, the person who runs Zyrex Bio packs the box.`,
+            `Every order is picked, packed and lodged from ${fullAddress}. There is no third-party warehouse in between, the person who runs Zyrex packs the box.`,
           ],
         },
         {

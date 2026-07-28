@@ -16,13 +16,13 @@ export default function NotFound() {
           That page has left the fridge.
         </h1>
         <p className="max-w-md text-[1rem] leading-relaxed text-slate">
-          The link is broken or the page has moved. The NAD+ is still exactly
+          The link is broken or the page has moved. The Zyrex 500mg is still exactly
           where it should be.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3">
           <ButtonLink href="/shop" size="lg">
-            Shop NAD+
+            Shop Zyrex
           </ButtonLink>
           <ButtonLink href="/" variant="outline" size="lg">
             Back home

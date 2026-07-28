@@ -9,9 +9,9 @@ import { fullAddress, site } from '@/lib/site'
 
 export const metadata: Metadata = pageMetadata({
   title: 'Contact',
-  description: `Email ${site.contact.email} for orders, batch documentation or bulk quotes. Zyrex Bio ships from ${site.address.city}, ${site.address.state}, replies within ${site.contact.responseWindow}.`,
+  description: `Email ${site.contact.email} for orders, batch documentation or bulk quotes. Zyrex ships from ${site.address.city}, ${site.address.state}, replies within ${site.contact.responseWindow}.`,
   path: '/contact',
-  keywords: ['contact Zyrex Bio', 'NAD+ supplier Australia contact'],
+  keywords: ['contact Zyrex', 'Zyrex 500mg supplier Australia contact'],
 })
 
 export default function ContactPage() {

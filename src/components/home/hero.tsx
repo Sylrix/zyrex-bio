@@ -12,7 +12,7 @@ import { products } from '@/lib/products'
 import { RUO_SHORT, site } from '@/lib/site'
 import { formatPrice } from '@/lib/utils'
 
-const WORDS = ['NAD+', 'purity', 'research'] as const
+const WORDS = ['potency', 'purity', 'precision'] as const
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null)
@@ -97,9 +97,9 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.45 }}
             className="max-w-xl text-[1.05rem] leading-relaxed text-slate"
           >
-            NAD+ 500mg, lyophilised, sealed and batch tested at 99% purity or
+            Zyrex 500mg, lyophilised, sealed and batch tested at 99% purity or
             better, packed by hand and posted Australia wide. Supplied strictly
-            as a research material. {RUO_SHORT}
+            as a laboratory material. {RUO_SHORT}
           </motion.p>
 
           <motion.div
@@ -110,11 +110,11 @@ export function Hero() {
           >
             <Magnetic>
               <ButtonLink href="/shop" size="lg">
-                Shop NAD+, from {formatPrice(cheapest.price)}
+                Shop Zyrex, from {formatPrice(cheapest.price)}
               </ButtonLink>
             </Magnetic>
-            <ButtonLink href="/research-use" size="lg" variant="outline">
-              Read the research use policy
+            <ButtonLink href="/lab-use" size="lg" variant="outline">
+              Read the laboratory use policy
             </ButtonLink>
           </motion.div>
 
@@ -157,8 +157,8 @@ export function Hero() {
 
           <div className="relative aspect-square animate-[var(--animate-bob)]">
             <Image
-              src="/products/nad-plus-500mg.webp"
-              alt="Zyrex Bio NAD+ 500mg research vial with teal seal"
+              src="/products/zyrex-500mg.webp"
+              alt="Zyrex 500mg vial with teal seal"
               fill
               priority
               sizes="(min-width: 1024px) 32rem, 90vw"
@@ -173,7 +173,7 @@ export function Hero() {
             500mg per vial
           </FloatingTag>
           <FloatingTag className="bottom-4 left-6" delay={1}>
-            Research use only
+            Laboratory use only
           </FloatingTag>
         </motion.div>
       </div>

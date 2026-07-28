@@ -14,15 +14,15 @@ export interface FaqEntry {
 export const faqs: readonly FaqEntry[] = [
   {
     q: 'What exactly am I buying?',
-    a: `A sealed glass vial of NAD+ supplied as a lyophilised powder, tested at 99% purity or better, with the compound, quantity and batch reference printed on the label. ${RUO_NOTICE}`,
+    a: `A sealed glass vial holding 500mg of high purity lyophilised material, tested at 99% purity or better, with the contents, quantity and batch reference printed on the label. ${RUO_NOTICE}`,
   },
   {
     q: 'Can I use this on myself or an animal?',
-    a: 'No. Everything sold by Zyrex Bio is a research material intended for laboratory use by qualified individuals. It is not a medicine, not a supplement and not a therapeutic good, and it must not be administered to a human or an animal.',
+    a: 'No. Everything sold by Zyrex is supplied for laboratory use by qualified individuals only. It is not a medicine, not a supplement and not a therapeutic good, and it must not be given to a human or an animal.',
   },
   {
-    q: 'Who runs Zyrex Bio?',
-    a: `Zyrex Bio is ${site.ownership}. It is not a company or an incorporated laboratory group. One person sources the material, packs the orders and answers the email.`,
+    q: 'Who runs Zyrex?',
+    a: `Zyrex is ${site.ownership}. It is not a company or an incorporated group. One person handles the stock, packs the orders and answers the email.`,
   },
   {
     q: 'How is my order shipped?',
@@ -30,7 +30,7 @@ export const faqs: readonly FaqEntry[] = [
   },
   {
     q: 'Do you ship outside Australia?',
-    a: 'Not at the moment. Orders are only accepted for delivery to Australian addresses so the research use conditions attached to the material can be met.',
+    a: 'Not at the moment. Orders are only accepted for delivery to Australian addresses so the laboratory use conditions attached to the material can be met.',
   },
   {
     q: 'How do I pay?',

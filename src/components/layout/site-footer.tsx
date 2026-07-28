@@ -6,16 +6,16 @@ import { PaymentMarks } from '@/components/payment/payment-marks'
 import { RUO_NOTICE, fullAddress, site } from '@/lib/site'
 
 const SHOP_LINKS = [
-  { href: '/shop', label: 'All NAD+ products' },
-  { href: '/product/nad-plus-500mg-single-vial', label: 'NAD+ 500mg single vial' },
-  { href: '/product/nad-plus-500mg-3-vial-kit', label: 'NAD+ 500mg 3 vial kit' },
-  { href: '/product/nad-plus-500mg-5-vial-kit', label: 'NAD+ 500mg 5 vial kit' },
-  { href: '/product/nad-plus-500mg-10-vial-case', label: 'NAD+ 500mg 10 vial case' },
+  { href: '/shop', label: 'All Zyrex 500mg products' },
+  { href: '/product/zyrex-500mg-single-vial', label: 'Zyrex 500mg single vial' },
+  { href: '/product/zyrex-500mg-3-vial-kit', label: 'Zyrex 500mg 3 vial kit' },
+  { href: '/product/zyrex-500mg-5-vial-kit', label: 'Zyrex 500mg 5 vial kit' },
+  { href: '/product/zyrex-500mg-10-vial-case', label: 'Zyrex 500mg 10 vial case' },
 ] as const
 
 const INFO_LINKS = [
-  { href: '/about', label: 'About Zyrex Bio' },
-  { href: '/research-use', label: 'Research use policy' },
+  { href: '/about', label: 'About Zyrex' },
+  { href: '/lab-use', label: 'Laboratory use policy' },
   { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
 ] as const
@@ -72,11 +72,11 @@ export function SiteFooter() {
 
         <div className="mt-12 rounded-2xl border-2 border-ink bg-white p-5">
           <p className="font-display text-sm font-extrabold tracking-tight uppercase">
-            Research use only
+            Laboratory use only
           </p>
           <p className="mt-2 text-[0.82rem] leading-relaxed text-slate">
             {RUO_NOTICE} Products are supplied to individuals aged 18 or over who
-            confirm they are purchasing for laboratory research. Nothing on this
+            confirm they are purchasing for laboratory use. Nothing on this
             site is medical advice, and no claim is made about any effect on the
             body of a human or an animal.
           </p>
@@ -89,7 +89,7 @@ export function SiteFooter() {
               as a sole trader in Australia.
             </p>
             <p className="text-[0.8rem] text-slate">
-              Zyrex Bio is {site.ownership}. It is not a company, laboratory group
+              Zyrex is {site.ownership}. It is not a company, laboratory group
               or incorporated entity.
             </p>
           </div>

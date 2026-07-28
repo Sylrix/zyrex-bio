@@ -36,7 +36,7 @@ const space = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | NAD+ Research Compounds, 99% Purity | Australia`,
+    default: `${site.name} | High Purity Lab Vials, 99% Purity | Australia`,
     template: `%s | ${site.name}`,
   },
   verification: {
@@ -46,12 +46,12 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   keywords: [
-    'NAD+ research compound',
-    'NAD+ 500mg vial',
-    'research use only NAD',
-    'buy NAD+ Australia',
-    'laboratory research chemicals Australia',
-    '99% purity NAD+',
+    'Zyrex 500mg vial',
+    'high purity lab vial Australia',
+    'laboratory vials 99% purity',
+    'buy Zyrex 500mg Australia',
+    'laboratory supplies Australia',
+    'sealed glass vial 500mg',
   ],
   authors: [{ name: site.name, url: site.url }],
   creator: site.name,
@@ -67,24 +67,24 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: site.locale,
     url: absoluteUrl('/'),
-    title: `${site.name} NAD+ Research Compounds, 99% Purity`,
+    title: `${site.name} High Purity Lab Vials, 99% Purity`,
     description: site.description,
     images: [
       {
-        url: '/products/nad-plus-500mg.webp',
+        url: '/products/zyrex-500mg.webp',
         width: 1200,
         height: 1200,
-        alt: 'Zyrex Bio NAD+ 500mg research vial',
+        alt: 'Zyrex 500mg vial',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${site.name} NAD+ Research Compounds`,
+    title: `${site.name} High Purity Lab Vials`,
     description: site.description,
-    images: ['/products/nad-plus-500mg.webp'],
+    images: ['/products/zyrex-500mg.webp'],
   },
-  category: 'Laboratory research supplies',
+  category: 'Laboratory supplies',
   formatDetection: { telephone: false, address: false, email: false },
 }
 

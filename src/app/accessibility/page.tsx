@@ -7,7 +7,7 @@ import { site } from '@/lib/site'
 export const metadata: Metadata = pageMetadata({
   title: 'Accessibility',
   description:
-    'How Zyrex Bio approaches accessibility, keyboard support, contrast, reduced motion, and how to report a barrier.',
+    'How Zyrex approaches accessibility, keyboard support, contrast, reduced motion, and how to report a barrier.',
   path: '/accessibility',
 })
 

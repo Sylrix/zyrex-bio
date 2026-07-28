@@ -6,7 +6,7 @@ import type { PaymentMethodId } from '@/lib/payment-methods'
  * an email address and order total do not belong in a URL that ends up in
  * history, referrer headers and analytics.
  */
-export const CONFIRMATION_STORAGE_KEY = 'zyrexbio.lastOrder.v1'
+export const CONFIRMATION_STORAGE_KEY = 'zyrex.lastOrder.v1'
 
 export interface Confirmation {
   readonly reference: string

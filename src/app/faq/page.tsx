@@ -11,9 +11,9 @@ import { site } from '@/lib/site'
 export const metadata: Metadata = pageMetadata({
   title: 'Frequently asked questions',
   description:
-    'Purity, storage, shipping, payment, returns and research use conditions, the questions people actually ask before ordering NAD+ from Zyrex Bio.',
+    'Purity, storage, shipping, payment, returns and laboratory use conditions, the questions people actually ask before ordering Zyrex 500mg from Zyrex.',
   path: '/faq',
-  keywords: ['NAD+ research FAQ', 'research chemical shipping Australia'],
+  keywords: ['laboratory FAQ', 'laboratory material shipping Australia'],
 })
 
 export default function FaqPage() {

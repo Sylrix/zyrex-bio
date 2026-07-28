@@ -7,7 +7,7 @@ import { fullAddress, site } from '@/lib/site'
 export const metadata: Metadata = pageMetadata({
   title: 'Privacy policy',
   description:
-    'What personal information Zyrex Bio collects, why, who it is shared with, and how to ask for a copy or have it deleted.',
+    'What personal information Zyrex collects, why, who it is shared with, and how to ask for a copy or have it deleted.',
   path: '/privacy-policy',
 })
 
@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
             'The delivery address you enter at checkout',
             'An optional lab or organisation name, and any delivery notes you add',
             'What you ordered, the total, and which payment method you chose',
-            'Your confirmation that the order is for research use',
+            'Your confirmation that the order is for laboratory use',
           ],
         },
         {

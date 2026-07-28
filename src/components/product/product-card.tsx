@@ -53,7 +53,7 @@ export function ProductCard({
         <div className="flex flex-wrap items-center gap-1.5">
           <Chip>{product.purity} purity</Chip>
           <Chip>{product.vials} × {product.strength}</Chip>
-          <Chip tone="lilac">Research use only</Chip>
+          <Chip tone="lilac">Laboratory use only</Chip>
         </div>
 
         <h3 className="font-display text-xl leading-tight font-extrabold">

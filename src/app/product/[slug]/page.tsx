@@ -32,11 +32,11 @@ export async function generateMetadata({
   }
 
   return pageMetadata({
-    title: `${product.name}, ${product.purity} Purity, Research Use Only`,
-    description: `${product.summary} ${product.vials} × ${product.strength} NAD+ lyophilised powder at ${product.purity} purity, ${formatPrice(product.price)} ${site.currency}, posted Australia wide. Research use only.`,
+    title: `${product.name}, ${product.purity} Purity, Laboratory Use Only`,
+    description: `${product.summary} ${product.vials} × ${product.strength} lyophilised powder in sealed glass vials at ${product.purity} purity, ${formatPrice(product.price)} ${site.currency}, posted Australia wide. Laboratory use only.`,
     path: `/product/${product.slug}`,
     image: product.image,
-    keywords: [product.name, 'NAD+ research vial', `NAD+ ${product.strength}`],
+    keywords: [product.name, 'lab vial', `Zyrex 500mg ${product.strength}`],
   })
 }
 
@@ -68,7 +68,7 @@ export default async function ProductPage({
       />
 
       <PageHero
-        eyebrow="NAD+ research material"
+        eyebrow="Zyrex 500mg laboratory material"
         title={product.name}
         description={product.summary}
         crumbs={crumbs}
@@ -99,7 +99,7 @@ export default async function ProductPage({
               {[
                 { icon: Snowflake, label: 'Cold held 2 to 8°C' },
                 { icon: Truck, label: 'Tracked AU post' },
-                { icon: ShieldAlert, label: 'Research use only' },
+                { icon: ShieldAlert, label: 'Laboratory use only' },
               ].map((item) => (
                 <li
                   key={item.label}
@@ -210,10 +210,10 @@ export default async function ProductPage({
           <p className="text-[0.78rem] leading-relaxed text-slate">
             {RUO_NOTICE}{' '}
             <Link
-              href="/research-use"
+              href="/lab-use"
               className="font-semibold text-blue underline underline-offset-4"
             >
-              Research-use policy
+              Laboratory use policy
             </Link>
           </p>
         </Reveal>
